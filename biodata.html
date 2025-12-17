@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Biodata - MUHAMMAD AFIQ - IMD318 Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="style_custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Style tambahan untuk besarkan logo media sosial */
+        .social-icon {
+            font-size: 80px; 
+            margin-bottom: 15px;
+            display: block;
+        }
+    </style>
+</head>
+<body id="page-body">
+
+    <header class="w3-container" style="text-align: center;">
+        <h1>My Detailed Personal Biodata</h1>
+    </header>
+
+    <main class="w3-content">
+        
+        <section id="main-navigation" class="w3-container w3-margin-bottom">
+            <div class="section-title-bar">
+                <h2 class="w3-text-primary">Navigate My Portfolio</h2>
+                <p id="current-time-display"></p> 
+            </div>
+            <div class="navigation-grid-inline">
+                <a href="index.html" class="nav-card"><h3>&#127968 HOME</h3><p>Home & Introduction</p></a>
+                <a href="biodata.html" class="nav-card w3-theme-l4"><h3>&#128100 BIODATA</h3><p>Personal Information</p></a>
+                <a href="experience.html" class="nav-card"><h3>&#128188 EXPERIENCE</h3><p>Work Experience & Projects</p></a>
+                <a href="education.html" class="nav-card"><h3>&#127891 EDUCATION</h3><p>Educational Background</p></a>
+                <a href="family.html" class="nav-card"><h3>&#128106 FAMILY</h3><p>Family Background</p></a>
+                <a href="gallery.html" class="nav-card"><h3>&#128248 GALLERY</h3><p>Photos & Videos</p></a>
+            </div>
+        </section>
+        
+        <section id="personal-details" class="w3-container w3-padding w3-card-4 w3-theme-l5 w3-margin-bottom">
+            <h2 class="w3-text-primary">Personal Details</h2>
+            <div class="personal-info-layout">
+                <div class="profile-photo-container">
+                    <img src="images/afiq2.jpg" alt="Afiq Profile Photo">
+                </div>
+                <div class="details-grid-wrapper">
+                    <div class="personal-detail-box">
+                        <div class="detail-item"><h4>Full Name</h4><p>MUHAMMAD AFIQ BIN MOHD AZAHAR</p></div>
+                        <div class="detail-item"><h4>UiTM ID</h4><p>2023456734</p></div>
+                        <div class="detail-item"><h4>Date of Birth</h4><p>8 MARCH 2005</p></div>
+                        <div class="detail-item"><h4>Age</h4><p>20 YEARS OLD</p></div>
+                        <div class="detail-item"><h4>Nationality</h4><p>MALAYSIA</p></div>
+                        <div class="detail-item"><h4>State of Origin</h4><p>SELANGOR</p></div>
+                        <div class="detail-item"><h4>District</h4><p>SEPANG</p></div>
+                        <div class="detail-item"><h4>Religion</h4><p>ISLAM</p></div>
+                        <div class="detail-item"><h4>Gender</h4><p>MALE</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="favourite-songs" class="w3-container w3-padding w3-card-4 w3-theme-l5 w3-margin-bottom">
+            <h2 class="w3-text-primary">My Favourite Songs</h2>
+            <p>Here are my current top 3 songs or artists that I enjoy listening to:</p>
+            <ul class="w3-ul w3-border w3-card-4" style="background: white;">
+                <li style="display: flex; align-items: center; padding: 16px; gap: 20px; border-bottom: 1px solid #ddd;">
+                    <img src="images/nadhif.jpg" alt="Nadhif Cover" style="width: 100px; height: 100px; border-radius: 8px; object-fit: cover;">
+                    <div style="flex: 1;">
+                        <strong class="w3-text-primary w3-large">BERGEMA SELAMANYA</strong><br>
+                        <small>by NADHIF BASALAMAH</small>
+                        <audio controls style="width: 100%; margin-top: 10px;"><source src="multimedia/nadhif.mp3" type="audio/mp3"></audio>
+                    </div>
+                </li>
+                <li style="display: flex; align-items: center; padding: 16px; gap: 20px; border-bottom: 1px solid #ddd;">
+                    <img src="images/mahalini.jpg" alt="Mahalini Cover" style="width: 100px; height: 100px; border-radius: 8px; object-fit: cover;">
+                    <div style="flex: 1;">
+                        <strong class="w3-text-primary w3-large">MATI MATIAN</strong><br>
+                        <small>by MAHALINI RAHARJA</small>
+                        <audio controls style="width: 100%; margin-top: 10px;"><source src="multimedia/mahalini.mp3" type="audio/mp3"></audio>
+                    </div>
+                </li>
+                <li style="display: flex; align-items: center; padding: 16px; gap: 20px;">
+                    <img src="images/tiara.jpg" alt="Tiara Cover" style="width: 100px; height: 100px; border-radius: 8px; object-fit: cover;">
+                    <div style="flex: 1;">
+                        <strong class="w3-text-primary w3-large">BUKAN UNTUKKU</strong><br>
+                        <small>by TIARA ANDINI</small>
+                        <audio controls style="width: 100%; margin-top: 10px;"><source src="multimedia/tiara.mp3" type="audio/mp3"></audio>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="favourite-movies" class="w3-container w3-padding w3-card-4 w3-theme-l5 w3-margin-bottom">
+            <h2 class="w3-text-primary">My Favourite Movies</h2>
+            <p>These films are very inspiring and leave a deep impression.</p>
+            <div class="biodata-movie-grid">
+                <div class="biodata-movie-card">
+                    <video controls poster="images/movie_poster_1.jpg"><source src="multimedia/beekeper.mp4" type="video/mp4"></video>
+                    <strong class="w3-text-primary">BEEKEPER</strong> 
+                    <span class="w3-tag w3-theme-d4 w3-margin-top w3-small">2024</span>
+                    <p>Genre : Action, Crime, Thriller</p>
+                    <p class="w3-small" style="font-style: italic;"> Favourite Quote : "Repeat after me… I will never steal from the weak and vulnerable again."</p>
+                </div>
+                <div class="biodata-movie-card">
+                    <video controls poster="images/movie_poster_2.jpg"><source src="multimedia/F1.mp4" type="video/mp4"></video>
+                    <strong class="w3-text-primary">F1</strong> 
+                    <span class="w3-tag w3-theme-d4 w3-margin-top w3-small">2025</span>
+                    <p>Genre : Action, Drama, Sport
+                    <p class="w3-small" style="font-style: italic;"> Favourite Quote : "What do you care what they say? It's just noise."</p>
+                </div>
+                <div class="biodata-movie-card">
+                    <video controls poster="images/movie_poster_3.jpg"><source src="multimedia/gran.mp4" type="video/mp4"></video>
+                    <strong class="w3-text-primary">GRAN TURISMO</strong> 
+                    <span class="w3-tag w3-theme-d4 w3-margin-top w3-small">2023</span>
+                    <p>Genre : Action, Adventure, Sport</p>
+                    <p class="w3-small" style="font-style: italic;"> Favourite Quote : "You made me a believer. Let’s go show the world."</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="social-media" class="w3-container w3-padding w3-card-4 w3-theme-l5 w3-margin-bottom">
+            <h2 class="w3-text-primary">My Social Media Accounts</h2>
+            <p>Connect with me on these platforms:</p>
+            
+            <div class="social-media-grid"> 
+                <div class="social-card w3-center">
+                    <i class="fa-brands fa-instagram w3-text-pink social-icon"></i>
+                    <h3 class="w3-text-primary">Instagram</h3>
+                    <a href="https://www.instagram.com/imfiqqq_?igsh=YXR3bWM4OHY1N3Ey&utm_source=qr" target="_blank" class="w3-button w3-theme-d4 w3-round-large w3-small">Click this</a>
+                </div>
+
+                <div class="social-card w3-center">
+                    <i class="fa-brands fa-tiktok w3-text-black social-icon"></i>
+                    <h3 class="w3-text-primary">TikTok</h3>
+                    <a href="https://www.tiktok.com/@imfiqqq_?_r=1&_t=ZS-92Hk9LoEkCb" target="_blank" class="w3-button w3-theme-d4 w3-round-large w3-small">Click this</a>
+                </div>
+
+                <div class="social-card w3-center">
+                    <i class="fa-brands fa-facebook w3-text-blue social-icon"></i>
+                    <h3 class="w3-text-primary">Facebook</h3>
+                    <a href="https://www.facebook.com/share/16XP4SktNU/?mibextid=wwXIfr" target="_blank" class="w3-button w3-theme-d4 w3-round-large w3-small">Click this</a>
+                </div>
+
+                <div class="social-card w3-center">
+                    <i class="fa-brands fa-snapchat w3-text-yellow social-icon" style="text-shadow: 1px 1px 2px #000;"></i>
+                    <h3 class="w3-text-primary">Snapchat</h3>
+                    <a href="https://snapchat.com/t/GZfBCk9t" target="_blank" class="w3-button w3-theme-d4 w3-round-large w3-small">Click this</a>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="w3-container w3-theme-d5 w3-padding-small w3-center">
+        <p>Copyright &copy; 2025 MUHAMMAD AFIQ BIN MOHD AZAHAR. All Rights Reserved.</p>
+        <p>Last Updated: <strong id="update-date"></strong></p>
+        <div class="footer-quick-links">
+            <a href="index.html">&#127968 Home</a> | <a href="biodata.html">&#128100 Biodata</a> | <a href="experience.html">&#128188 Experience</a> | <a href="education.html">&#127891 Education</a> | <a href="family.html">&#128106 Family</a> | <a href="gallery.html">&#128248 Gallery</a>
+        </div>
+    </footer>
+
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const timeDisplay = document.getElementById('current-time-display');
+            if (timeDisplay) {
+                timeDisplay.innerHTML = now.toLocaleString('en-US', { 
+                    weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit'
+                });
+            }
+        }
+        setInterval(updateTime, 1000);
+        updateTime();
+
+        function updateFooterDate() {
+            const now = new Date();
+            document.getElementById('update-date').innerHTML = now.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+        }
+        updateFooterDate();                    
+    </script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Experience - MUHAMMAD AFIQ - IMD318 Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="style_custom.css">
+    <style>
+        /* CSS Tambahan untuk memastikan peta & gambar seimbang */
+        .map-container {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body id="page-body">
+
+    <header class="w3-container" style="text-align: center;">
+        <h1>My Professional & Academic Experience</h1>
+    </header>
+
+    <main class="w3-content">
+
+        <section id="main-navigation" class="w3-container w3-margin-bottom">
+            <div class="section-title-bar">
+                <h2 class="w3-text-primary">Navigate My Portfolio </h2>
+                <p id="current-time-display"></p>
+            </div>
+            <div class="navigation-grid-inline">
+                <a href="index.html" class="nav-card"><h3>&#127968 HOME </h3><p>Home & Introduction</p></a>
+                <a href="biodata.html" class="nav-card"><h3>&#128100 BIODATA </h3><p>Personal Information</p></a>
+                <a href="experience.html" class="nav-card w3-theme-l4"><h3>&#128188 EXPERIENCE </h3><p>Work Experience & Projects</p></a> 
+                <a href="education.html" class="nav-card"><h3>&#127891 EDUCATION </h3><p>Educational Background</p></a>
+                <a href="family.html" class="nav-card"><h3>&#128106 FAMILY </h3><p>Family Background</p></a>
+                <a href="gallery.html" class="nav-card"><h3>&#128248 GALLERY </h3><p>Photos & Videos</p></a>
+            </div>
+        </section>
+        
+        <section id="work-experience">
+            <div class="section-title-bar">
+                <h2>Work & Internship History </h2>
+            </div>
+            <ol class="w3-ul w3-card-4">
+                <li class="timeline-item institution-card">
+                    <h3 class="w3-text-primary">Internship</h3>
+                    <p><strong>Pejabat Daerah dan Tanah Sepang</strong> | <time datetime="2025-07-28">28 July 2025</time> - <time datetime="2025-09-19">19 September 2025</time></p>
+                    
+                    <div class="office-building-container">
+                        <h4 class="w3-text-primary" style="margin-bottom: 20px;">📍 Internship Location</h4>
+                        
+                        <div class="w3-row-padding">
+                            <div class="w3-half">
+                                <a onclick="openImageModal('images/pj.jpg')" style="cursor: pointer;">
+                                    <img src="images/pj.jpg" alt="Bangunan Pejabat Daerah dan Tanah Sepang" class="building-img" style="width:100%; height:250px; object-fit:cover;">
+                                </a>
+                                <p class="building-caption">Bandar Baru Salak Tinggi, Sepang, Selangor</p>
+                            </div>
+
+                            <div class="w3-half">
+                                <div class="map-container">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.018838488438!2d101.7443093!3d2.8106177999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdc72f9e2e19b1%3A0x5cc203437c66e30c!2sSepang%20Land%20Office!5e0!3m2!1sen!2smy!4v1765911906621!5m2!1sen!2smy" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 style="margin-top: 25px; margin-bottom: 15px;">Key Responsibilities</h4>
+                    
+                    <div id="responsibility-grid" style="margin-bottom: 20px;">
+                        <div class="responsibility-item">
+                            <div class="detail-item w3-card-2 w3-padding-medium w3-round-large w3-light-gray w3-hover-shadow">
+                                <h4>&#128222 Calls & Referrals</h4>
+                                <p>Answered and directed public calls to the appropriate units</p>
+                            </div>
+                        </div>
+                        <div class="responsibility-item">
+                            <div class="detail-item w3-card-2 w3-padding-medium w3-round-large w3-light-gray w3-hover-shadow">
+                                <h4>&#127916 Media & Creative</h4>
+                                <p>Contributed to media-related tasks such as video recording and content preparation</p>
+                            </div>
+                        </div>
+                        <div class="responsibility-item">
+                            <div class="detail-item w3-card-2 w3-padding-medium w3-round-large w3-light-gray w3-hover-shadow">
+                                <h4>&#128221 Official Documentation</h4>
+                                <p>Managed, recorded, and organized official documents and correspondence</p>
+                            </div>
+                        </div>
+                        <div class="responsibility-item">
+                            <div class="detail-item w3-card-2 w3-padding-medium w3-round-large w3-light-gray w3-hover-shadow">
+                                <h4>&#128187 Communication</h4>
+                                <p>Supported inter-departmental communication and coordination</p>
+                            </div>
+                        </div>
+                        <div class="responsibility-item">
+                            <div class="detail-item w3-card-2 w3-padding-medium w3-round-large w3-light-gray w3-hover-shadow">
+                                <h4>&#128202 Reporting</h4>
+                                <p>Assisted in preparing reports, minutes, and documentation</p>
+                            </div>
+                        </div>
+                        <div class="responsibility-item">
+                            <div class="detail-item w3-card-2 w3-padding-medium w3-round-large w3-light-gray w3-hover-shadow">
+                                <h4>&#128190 Compliance</h4>
+                                <p>Ensured tasks were completed in accordance with procedures</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w3-margin-top w3-padding-small">
+                        <hr class="w3-border-theme">
+                        <h4 class="w3-text-primary">Internship Related Media</h4>
+                        
+                        <div class="w3-row-padding w3-small" style="margin-bottom: 10px;">
+                            <div class="w3-col m3 s6" style="padding: 0 8px;">
+                                <div class="w3-card w3-white w3-margin-bottom media-item-box">
+                                    <a onclick="openImageModal('images/it1.jpg')" style="cursor: pointer;">
+                                        <img src="images/it1.jpg" alt="IT 1" class="school-activity-img" style="width:100%">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="w3-col m3 s6" style="padding: 0 8px;">
+                                <div class="w3-card w3-white w3-margin-bottom media-item-box">
+                                    <div class="video-fixed-height-container">
+                                        <video controls style="width:100%">
+                                            <source src="multimedia/itin.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w3-col m3 s6" style="padding: 0 8px;">
+                                <div class="w3-card w3-white w3-margin-bottom media-item-box">
+                                    <a onclick="openImageModal('images/it2.jpg')" style="cursor: pointer;">
+                                        <img src="images/it2.jpg" alt="IT 2" class="school-activity-img" style="width:100%">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="w3-col m3 s6" style="padding: 0 8px;">
+                                <div class="w3-card w3-white w3-margin-bottom media-item-box">
+                                    <a onclick="openImageModal('images/it3.jpg')" style="cursor: pointer;">
+                                        <img src="images/it3.jpg" alt="IT 3" class="school-activity-img" style="width:100%">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w3-row-padding w3-small">
+                            <div class="w3-col m3 s6" style="padding: 0 8px;">
+                                <div class="w3-card w3-white w3-margin-bottom media-item-box">
+                                    <a onclick="openImageModal('images/it4.jpg')" style="cursor: pointer;">
+                                        <img src="images/it4.jpg" alt="IT 4" class="school-activity-img" style="width:100%">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="w3-col m3 s6" style="padding: 0 8px;">
+                                <div class="w3-card w3-white w3-margin-bottom media-item-box">
+                                    <a onclick="openImageModal('images/it5.jpg')" style="cursor: pointer;">
+                                        <img src="images/it5.jpg" alt="IT 5" class="school-activity-img" style="width:100%">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="w3-col m3 s6" style="padding: 0 8px;">
+                                <div class="w3-card w3-white w3-margin-bottom media-item-box">
+                                    <a onclick="openImageModal('images/it7.jpg')" style="cursor: pointer;">
+                                        <img src="images/it7.jpg" alt="IT 7" class="school-activity-img" style="width:100%">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="w3-col m3 s6" style="padding: 0 8px;">
+                                <div class="w3-card w3-white w3-margin-bottom media-item-box">
+                                    <a onclick="openImageModal('images/it6.jpg')" style="cursor: pointer;">
+                                        <img src="images/it6.jpg" alt="IT 6" class="school-activity-img" style="width:100%">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </section>
+    </main>
+    
+    <div id="imageModal" class="w3-modal w3-animate-opacity" onclick="closeModal()"> 
+        <span class="w3-button w3-large w3-text-red" style="z-index: 10001; position: fixed; right: 15px; top: 15px;">&times;</span>
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+            <img id="modalImageContent" style="width:100%" onclick="event.stopPropagation()"> 
+        </div>
+    </div>
+
+    <footer class="w3-container w3-theme-d5 w3-padding-small w3-center">
+        <p>Copyright &copy; 2025 MUHAMMAD AFIQ BIN MOHD AZAHAR. All Rights Reserved.</p>
+        <p>Creation Date: <b>December 1, 2025</b> | Last Updated: <strong id="update-date">Loading...</strong></p>
+        
+        <div class="footer-quick-links">
+            <p><strong>Quick Links:</strong></p>
+            <a href="index.html">&#127968 Home</a> | 
+            <a href="biodata.html">&#128100 Biodata</a> | 
+            <a href="experience.html">&#128188 Experience</a> | 
+            <a href="education.html">&#127891 Education</a> | 
+            <a href="family.html">&#128106 Family</a> | 
+            <a href="gallery.html">&#128248 Gallery</a>
+        </div>
+    </footer>
+    
+<script>
+function updateTime() {
+    const now = new Date();
+    const formattedTime = now.toLocaleDateString('en-US', { 
+        weekday: 'long', day: 'numeric', month: 'long', year: 'numeric',
+        hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true 
+    });
+    const timeDisplay = document.getElementById('current-time-display');
+    if (timeDisplay) timeDisplay.innerHTML = formattedTime;
+}
+
+        function updateFooterDate() {
+            const now = new Date();
+            const updateDateElement = document.getElementById('update-date');
+            if (updateDateElement) {
+                updateDateElement.innerHTML = now.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+            }
+        }
+
+        updateTime();
+        setInterval(updateTime, 1000);
+        updateFooterDate();
+
+function openImageModal(imageSrc) {
+    document.getElementById('modalImageContent').src = imageSrc;
+    document.getElementById('imageModal').classList.add('w3-show');
+    document.addEventListener('keydown', handleEsc, false);
+}
+
+function closeModal() {
+    document.getElementById('imageModal').classList.remove('w3-show');
+    document.removeEventListener('keydown', handleEsc, false);
+}
+
+function handleEsc(e) { if (e.key === 'Escape') closeModal(); }
+
+// Memastikan footer last update diisi
+const lastUpdateElem = document.getElementById('last-update');
+if(lastUpdateElem) {
+    lastUpdateElem.innerHTML = new Date().toLocaleDateString('en-MY', {day:'numeric', month:'long', year:'numeric'});
+}
+
+updateTime(); 
+setInterval(updateTime, 1000); 
+</script>
+
+</body>
+</html>

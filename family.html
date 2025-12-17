@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Family Background - [Your Name] - IMD318 Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="w3.css"> 
+    <link rel="stylesheet" href="style_custom.css">
+</head>
+<body id="page-body">
+
+    <header class="w3-container" style="text-align: center;">
+        <h1>Our Beloved Family</h1>
+    </header>
+
+    <main class="w3-content">
+
+        <section id="main-navigation" class="w3-container w3-margin-bottom">
+            <div class="section-title-bar">
+                <h2 class="w3-center w3-text-primary">Navigate My Portfolio</h2>
+                <p id="current-time-display"></p> 
+            </div>
+            <div class="navigation-grid-inline"> 
+                <a href="index.html" class="nav-card"><h3>&#127968 HOME</h3><p>Home & Introduction</p></a>
+                <a href="biodata.html" class="nav-card"><h3>&#128100 BIODATA</h3><p>Personal Information</p></a>
+                <a href="experience.html" class="nav-card"><h3>&#128188 EXPERIENCE</h3><p>Work Experience & Projects</p></a>
+                <a href="education.html" class="nav-card"><h3>&#127891 EDUCATION</h3><p>Educational Background</p></a>
+                <a href="family.html" class="nav-card w3-theme-l4"><h3>&#128106 FAMILY</h3><p>Family Background</p></a> 
+                <a href="gallery.html" class="nav-card"><h3>&#128248 GALLERY</h3><p>Photos & Videos</p></a>
+            </div>
+        </section>
+
+        <section id="immediate-family" class="w3-container w3-padding w3-card-4 w3-theme-l5 w3-margin-bottom">
+            <h2 class="focus-in">Welcome to Our Family</h2>
+            <div class="family-grid">
+                <div class="family-member-card">
+                    <img src="images/ay.jpg" alt="Photo of Father">
+                    <h4 class="w3-text-primary">My Father</h4>
+                    <p><strong>Mohd Azahar</strong></p>
+                </div>
+                <div class="family-member-card">
+                    <img src="images/ma.jpg" alt="Photo of Mother">
+                    <h4 class="w3-text-primary">My Mother</h4>
+                    <p><strong>Nor Shalinda</strong></p>
+                </div>
+                <div class="family-member-card">
+                    <img src="images/afi.jpg" alt="Photo of Sibling">
+                    <h4 class="w3-text-primary">Me</h4>
+                    <p><strong>Muhammad Afiq</strong></p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="immediate-family" class="w3-container w3-padding w3-card-4 w3-theme-l5 w3-margin-bottom">
+            <h2 class="gradient-text">Family Album</h2>
+            
+            <div class="family-album-grid">
+                
+                <div class="album-item">
+                    <img src="images/fam1.jpg" alt="Family Photo 1" class="album-photo">
+                    <div class="caption-album">Eid al-Fitr 2025</div>
+                </div>
+                
+                <div class="album-item">
+                    <img src="images/fam2.jpg" alt="Family Photo 2" class="album-photo">
+                    <div class="caption-album">Eid al-Fitr 2024</div>
+                </div>
+                
+                <div class="album-item">
+                    <img src="images/fam6.jpg" alt="Family Photo 3" class="album-photo">
+                    <div class="caption-album">Eid al-Fitr 2023</div>
+                </div>
+                
+                <div class="album-item">
+                    <img src="images/fam4.jpg" alt="Family Photo 4" class="album-photo">
+                    <div class="caption-album">First Day of Entering UiTM</div>
+                </div>
+
+                <div class="album-item">
+                    <img src="images/fam5.jpg" alt="Family Photo 5" class="album-photo">
+                    <div class="caption-album">SPM Results Presentation Ceremony</div>
+                </div>
+
+                <div class="album-item">
+                    <img src="images/fam3.jpg" alt="Family Photo 6" class="album-photo">
+                    <div class="caption-album">Penang Trip Day</div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="w3-container w3-theme-d5 w3-padding-small w3-center">
+        <p>Copyright &copy; 2025 MUHAMMAD AFIQ BIN MOHD AZAHAR. All Rights Reserved.</p>
+        <p>Creation Date: <b>December 1, 2025</b> | Last Updated: <strong id="update-date">Loading...</strong></p>
+        
+        <div class="footer-quick-links">
+            <p><strong>Quick Links:</strong></p>
+            <a href="index.html">&#127968 Home</a> | 
+            <a href="biodata.html">&#128100 Biodata</a> | 
+            <a href="experience.html">&#128188 Experience</a> | 
+            <a href="education.html">&#127891 Education</a> | 
+            <a href="family.html">&#128106 Family</a> | 
+            <a href="gallery.html">&#128248 Gallery</a>
+        </div>
+    </footer>
+    
+<script>
+// Kod untuk memaparkan masa semasa
+function updateTime() {
+    const now = new Date();
+    // Menggunakan 'en-US' (English - United States)
+    const formattedTime = now.toLocaleDateString('en-US', { 
+        weekday: 'long', 
+        day: 'numeric', 
+        month: 'long', 
+        year: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: true 
+    });
+    
+    const timeDisplay = document.getElementById('current-time-display');
+    if (timeDisplay) {
+                timeDisplay.innerHTML = formattedTime; 
+            }
+        }
+
+    updateTime(); 
+    setInterval(updateTime, 1000); 
+
+        function updateFooterDate() {
+            const now = new Date();
+            const updateDateElement = document.getElementById('update-date');
+            if (updateDateElement) {
+                updateDateElement.innerHTML = now.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+            }
+        }
+
+        updateTime();
+        setInterval(updateTime, 1000);
+        updateFooterDate();
+</script>
+
+</body>
+</html>

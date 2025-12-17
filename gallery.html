@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Photo and Multimedia Gallery - MUHAMMAD AFIQ - IMD318 Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="style_custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body id="page-body">
+
+    <header class="w3-container" style="text-align: center;">
+        <h1>My Gallery</h1>
+    </header>
+
+    <main class="w3-content">
+
+        <section id="main-navigation" class="w3-container w3-margin-bottom">
+            <div class="section-title-bar">
+                <h2 class="w3-center w3-text-primary">Navigate My Portfolio</h2>
+                <p id="current-time-display"></p>
+            </div>
+            <div class="navigation-grid-inline">
+                <a href="index.html" class="nav-card"><h3>&#127968 HOME</h3><p>Home & Introduction</p></a>
+                <a href="biodata.html" class="nav-card"><h3>&#128100 BIODATA</h3><p>Personal Information</p></a>
+                <a href="experience.html" class="nav-card"><h3>&#128188 EXPERIENCE</h3><p>Work Experience & Projects</p></a>
+                <a href="education.html" class="nav-card"><h3>&#127891 EDUCATION</h3><p>Educational Background</p></a>
+                <a href="family.html" class="nav-card"><h3>&#128106 FAMILY</h3><p>Family Background</p></a>
+                <a href="gallery.html" class="nav-card w3-theme-l4"><h3>&#128248 GALLERY</h3><p>Photos & Videos</p></a> 
+            </div>
+        </section>
+
+        <section id="photo-gallery" class="w3-container w3-padding w3-card-4 w3-theme-l5 w3-margin-bottom">
+            <h2 class="float-text">Photo Highlights</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <a href="#" onclick="showAlbum('album-eid-fitri'); return false;" style="cursor: pointer;"><img src="images/af3.jpg" alt="MySelf Album"></a>
+                    <div class="caption">MY SELF <br> ALBUM</div>
+                </div>
+                <div class="gallery-item">
+                    <a href="#" onclick="showAlbum('album-uitm-campus'); return false;" style="cursor: pointer;"><img src="images/fa10.jpg" alt="My Friend Album"></a>
+                    <div class="caption">MY FRIEND <br> ALBUM</div>
+                </div>
+                <div class="gallery-item">
+                    <a href="#" onclick="showAlbum('album-family-gathering'); return false;" style="cursor: pointer;"><img src="images/fi9.jpg" alt="My Childhood Album"></a>
+                    <div class="caption">MY CHILDHOOD <br> ALBUM</div>
+                </div>
+                <div class="gallery-item">
+                    <a href="#" onclick="showAlbum('album-coding-setup'); return false;" style="cursor: pointer;"><img src="images/aq1.jpg" alt="My School Time Album"></a>
+                    <div class="caption">MY SCHOOL TIME <br> ALBUM</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="video-highlight" class="w3-container w3-padding w3-card-4 w3-theme-l5 w3-margin-bottom">
+            <h2 class="w3-text-primary typing-container">
+                <span class="typing-effect" id="typewriter-text">Random Video Highlight</span>
+            </h2>
+            
+            <div class="movie-grid">
+                <div class="movie-card">
+                    <video controls style="width: 100%; border-radius: 8px;">
+                        <source src="multimedia/af.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <div class="movie-card">
+                    <video controls style="width: 100%; border-radius: 8px;">
+                        <source src="multimedia/fa.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <div class="movie-card">
+                    <video controls style="width: 100%; border-radius: 8px;">
+                        <source src="multimedia/as.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <div class="movie-card">
+                    <video controls style="width: 100%; border-radius: 8px;">
+                        <source src="multimedia/qa.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+        
+        <section id="album-eid-fitri" class="w3-container w3-padding w3-card-4 w3-theme-l5 w3-margin-bottom w3-hide w3-animate-opacity">
+            <header class="w3-container w3-margin-top" style="text-align: center;">
+                <h2 class="w3-text-primary">MySelf Album</h2> </header>
+            <section id="album-photos-content-eid">
+                <p><a href="#" onclick="showGallery(); return false;" class="w3-button w3-round w3-blue w3-small w3-border">← Return to Main Gallery</a></p>
+                <div class="gallery-grid">
+                    <div class="gallery-item"><img src="images/af1.jpg" alt="Foto 1" onclick="openModal(event, 'images/af1.jpg', '')" style="cursor: pointer;"></div>
+                    <div class="gallery-item"><img src="images/af4.jpg" alt="Foto 2" onclick="openModal(event, 'images/af4.jpg', '')" style="cursor: pointer;"></div>
+                    <div class="gallery-item"><img src="images/af5.jpg" alt="Foto 3" onclick="openModal(event, 'images/af5.jpg', '')" style="cursor: pointer;"></div>
+                    <div class="gallery-item"><img src="images/af2.jpg" alt="Foto 4" onclick="openModal(event, 'images/af2.jpg', '')" style="cursor:pointer;"></div>
+                    <div class="gallery-item"><img src="images/af6.jpg" alt="Foto 5" onclick="openModal(event, 'images/af6.jpg', '')" style="cursor: pointer;"></div>
+                    <div class="gallery-item"><img src="images/af7.jpg" alt="Foto 6" onclick="openModal(event, 'images/af7.jpg', '')" style="cursor: pointer;"></div>
+                    <div class="gallery-item"><img src="images/af8.jpg" alt="Foto 7" onclick="openModal(event, 'images/af8.jpg', '')" style="cursor: pointer;"></div>
+                    <div class="gallery-item"><img src="images/af9.jpg" alt="Foto 8" onclick="openModal(event, 'images/af9.jpg', '')" style="cursor: pointer;"></div>
+                </div>
+            </section>
+        </section>
+
+        <section id="album-uitm-campus" class="w3-container w3-padding w3-card-4 w3-theme-l5 w3-margin-bottom w3-hide w3-animate-opacity">
+            <header class="w3-container w3-margin-top" style="text-align: center;">
+                <h2 class="w3-text-primary">My Friend Album</h2>            
+            </header>
+            <section id="album-photos-content-uitm">
+                <p><a href="#" onclick="showGallery(); return false;" class="w3-button w3-round w3-blue w3-small w3-border">← Return to Main Gallery</a></p>
+                <div class="gallery-grid">
+                    <div class="gallery-item"><img src="images/fa1.jpg" alt="Foto 1" onclick="openModal(event, 'images/fa1.jpg', '')" style="cursor: pointer;"></div>
+                    <div class="gallery-item"><img src="images/fa2.jpg" alt="Foto 2" onclick="openModal(event, 'images/fa2.jpg', '')" style="cursor: pointer;"></div>
+                    <div class="gallery-item"><img src="images/fa3.jpg" alt="Foto 3" onclick="openModal(event, 'images/fa3.jpg', '')" style="cursor: pointer;"></div>
+                    <div class="gallery-item"><img src="images/fa4.jpg" alt="Foto 4" onclick="openModal(event, 'images/fa4.jpg', '')" style="cursor: pointer;"></div>
+                    <div class="gallery-item"><img src="images/fa5.jpg" alt="Foto 5" onclick="openModal(event, 'images/fa5.jpg', '')" style="cursor: pointer;"></div>
+                    <div class="gallery-item"><img src="images/fa6.jpg" alt="Foto 6" onclick="openModal(event, 'images/fa6.jpg', '')" style="cursor: pointer;"></div>
+                    <div class="gallery-item"><img src="images/fa7.jpg" alt="Foto 7" onclick="openModal(event, 'images/fa7.jpg', '')" style="cursor: pointer;"></div>
+                    <div class="gallery-item"><img src="images/fa8.jpg" alt="Foto 8" onclick="openModal(event, 'images/fa8.jpg', '')" style="cursor: pointer;"></div>
+                </div>
+            </section>
+        </section>
+
+        <section id="album-family-gathering" class="w3-container w3-padding w3-card-4 w3-theme-l5 w3-margin-bottom w3-hide w3-animate-opacity">
+            <header class="w3-container w3-margin-top" style="text-align: center;">
+                <h2 class="w3-text-primary">My Childhood Album</h2> 
+            </header>
+            <section id="album-photos-content-family">
+                <p><a href="#" onclick="showGallery(); return false;" class="w3-button w3-round w3-blue w3-small w3-border">← Return to Main Gallery</a></p>
+                <div class="gallery-grid">
+                    <div class="gallery-item"><img src="images/fi1.jpg" alt="Foto 1" onclick="openModal(event, 'images/fi1.jpg', '')" style="cursor: pointer;"></div>
+                    <div class="gallery-item"><img src="images/fi2.jpg" alt="Foto 2" onclick="openModal(event, 'images/fi2.jpg', '')" style="cursor: pointer;"></div>
+                    <div class="gallery-item"><img src="images/fi3.jpg" alt="Foto 3" onclick="openModal(event, 'images/fi3.jpg', '')" style="cursor: pointer;"></div>
+                    <div class="gallery-item"><img src="images/fi4.jpg" alt="Foto 4" onclick="openModal(event, 'images/fi4.jpg', '')" style="cursor: pointer;"></div>
+                    <div class="gallery-item"><img src="images/fi5.jpg" alt="Foto 5" onclick="openModal(event, 'images/fi5.jpg', '')" style="cursor: pointer;"></div>
+                    <div class="gallery-item"><img src="images/fi6.jpg" alt="Foto 6" onclick="openModal(event, 'images/fi6.jpg', '')" style="cursor: pointer;"></div>
+                    <div class="gallery-item"><img src="images/fi7.jpg" alt="Foto 7" onclick="openModal(event, 'images/fi7.jpg', '')" style="cursor: pointer;"></div>
+                    <div class="gallery-item"><img src="images/fi8.jpg" alt="Foto 8" onclick="openModal(event, 'images/fi8.jpg', '')" style="cursor: pointer;"></div>
+                </div>
+            </section>
+        </section>
+
+        <section id="album-coding-setup" class="w3-container w3-padding w3-card-4 w3-theme-l5 w3-margin-bottom w3-hide w3-animate-opacity">
+            <header class="w3-container w3-margin-top" style="text-align: center;">
+                <h2 class="w3-text-primary">My School Time Album</h2> 
+            </header>
+            <section id="album-photos-content-coding">
+                <p><a href="#" onclick="showGallery(); return false;" class="w3-button w3-round w3-blue w3-small w3-border">← Return to Main Gallery</a></p>
+                <div class="gallery-grid">
+                    <div class="gallery-item"><img src="images/aq9.jpg" alt="Foto 1" onclick="openModal(event, 'images/aq9.jpg', '')" style="cursor: pointer;"></div>
+                    <div class="gallery-item"><img src="images/aq2.jpg" alt="Foto 2" onclick="openModal(event, 'images/aq2.jpg', '')" style="cursor: pointer;"></div>
+                    <div class="gallery-item"><img src="images/aq3.jpg" alt="Foto 3" onclick="openModal(event, 'images/aq3.jpg', '')" style="cursor: pointer;"></div>
+                    <div class="gallery-item"><img src="images/aq4.jpg" alt="Foto 4" onclick="openModal(event, 'images/aq4.jpg', '')" style="cursor: pointer;"></div>
+                    <div class="gallery-item"><img src="images/aq5.jpg" alt="Foto 5" onclick="openModal(event, 'images/aq5.jpg', '')" style="cursor: pointer;"></div>
+                    <div class="gallery-item"><img src="images/aq6.jpg" alt="Foto 6" onclick="openModal(event, 'images/aq6.jpg', '')" style="cursor: pointer;"></div>
+                    <div class="gallery-item"><img src="images/aq7.jpg" alt="Foto 7" onclick="openModal(event, 'images/aq7.jpg', '')" style="cursor: pointer;"></div>
+                    <div class="gallery-item"><img src="images/aq8.jpg" alt="Foto 8" onclick="openModal(event, 'images/aq8.jpg', '')" style="cursor: pointer;"></div>
+                </div>
+            </section>
+        </section>
+
+        <div id="photo-modal" onclick="closeModal()">
+            <span class="w3-button w3-hover-red w3-xlarge" style="position: absolute; right: 15px; top: 15px; z-index: 10000;" onclick="closeModal(event)">&times;</span>
+            <div class="modal-content-custom">
+                <img id="modal-image" style="cursor: default;" onclick="event.stopPropagation();">
+                <p id="modal-caption" class="w3-text-white w3-opacity w3-large w3-padding-small w3-center"></p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="w3-container w3-theme-d5 w3-padding-small w3-center">
+        <p>Copyright &copy; 2025 MUHAMMAD AFIQ BIN MOHD AZAHAR. All Rights Reserved.</p>
+        <p>Creation Date: <b>December 1, 2025</b> | Last Updated: <strong id="update-date">Loading...</strong></p>
+
+        <div class="footer-quick-links">
+            <p><strong>Quick Links:</strong></p>
+            <a href="index.html">&#127968 Home</a> |
+            <a href="biodata.html">&#128100 Biodata</a> |
+            <a href="experience.html">&#128188 Experience</a> |
+            <a href="education.html">&#127891 Education</a> |
+            <a href="family.html">&#128106 Family</a> |
+            <a href="gallery.html">&#128248 Gallery</a>
+        </div>
+    </footer>
+
+<script>
+// ===================================
+// FUNGSI JAVASCRIPT
+// ===================================
+
+function updateTime() {
+    const now = new Date();
+    const formattedTime = now.toLocaleDateString('en-US', {
+        weekday: 'long', day: 'numeric', month: 'long', year: 'numeric',
+        hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true
+    });
+    const timeDisplay = document.getElementById('current-time-display');
+    if (timeDisplay) timeDisplay.innerHTML = formattedTime;
+}
+
+function updateFooterDate() {
+    const now = new Date();
+    const updateDateElement = document.getElementById('update-date');
+    if (updateDateElement) {
+        updateDateElement.innerHTML = now.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    }
+}
+
+const allAlbumIds = ['album-eid-fitri', 'album-uitm-campus', 'album-family-gathering', 'album-coding-setup'];
+const allGallerySections = ['main-navigation', 'photo-gallery', 'video-highlight'];
+
+function showAlbum(albumId) {
+    allGallerySections.forEach(id => {
+        const sectionElement = document.getElementById(id);
+        if (sectionElement) sectionElement.classList.add('w3-hide');
+    });
+
+    allAlbumIds.forEach(id => {
+        const albumElement = document.getElementById(id);
+        if (albumElement) albumElement.classList.add('w3-hide');
+    });
+
+    const albumElement = document.getElementById(albumId);
+    if (albumElement) {
+        albumElement.classList.remove('w3-hide');
+        albumElement.classList.add('w3-show', 'w3-animate-opacity');
+    }
+    window.scrollTo(0, 0);
+}
+
+function showGallery() {
+    allAlbumIds.forEach(id => {
+        const albumElement = document.getElementById(id);
+        if (albumElement) albumElement.classList.add('w3-hide');
+    });
+    
+    allGallerySections.forEach(id => {
+        const sectionElement = document.getElementById(id);
+        if (sectionElement) sectionElement.classList.remove('w3-hide');
+    });
+    window.scrollTo(0, 0);
+}
+
+function openModal(event, imageSrc, captionText) {
+    event.preventDefault();
+    const modal = document.getElementById('photo-modal');
+    const modalImg = document.getElementById("modal-image");
+    const captionTextElement = document.getElementById("modal-caption");
+
+    modal.classList.add('w3-show');
+    modalImg.src = imageSrc;
+    captionTextElement.innerHTML = '';
+    captionTextElement.style.display = 'none'; 
+    document.addEventListener('keydown', handleEsc, false);
+}
+
+function closeModal(event) {
+    if (event && event.target.id === 'modal-image') return; 
+    const modal = document.getElementById('photo-modal');
+    modal.classList.remove('w3-show');
+    document.removeEventListener('keydown', handleEsc, false);
+}
+
+function handleEsc(e) {
+    if (e.key === 'Escape') closeModal();
+}
+
+// --- JAVASCRIPT INTERSECTION OBSERVER UNTUK TYPING ---
+const typeObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            const textElement = document.getElementById('typewriter-text');
+            if (textElement) {
+                textElement.classList.add('start-typing');
+            }
+        }
+    });
+}, { threshold: 0.5 });
+
+const videoTitleContainer = document.querySelector('.typing-container');
+if (videoTitleContainer) {
+    typeObserver.observe(videoTitleContainer);
+}
+
+// Jalankan fungsi awal
+updateTime();
+setInterval(updateTime, 1000);
+updateFooterDate();
+
+</script>
+
+</body>
+</html>
