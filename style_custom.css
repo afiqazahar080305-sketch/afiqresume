@@ -1,87 +1,82 @@
-    /* Fail: style_custom.css (Gaya Penuh) */
+    /*File: style_custom.css (Full Style)*/
 
-    /* --- 1. Reset dan Definisi Global --- */
+    /* --- Reset and Global Definition --- */
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box; 
     }
 
-    /* Definisi Pembolehubah CSS */
+    /* CSS Variable Definition */
     :root {
-        --color-primary: #5A6A90; /* Biru Kelabu Moden (Warna Utama UiTM/Korporat) */
-        --color-secondary: #FFC300; /* Kuning Emas/Aksen */
+        --color-primary: #5A6A90; 
+        --color-secondary: #FFC300; 
         --color-text: #333333; 
-        --color-light: #F4F7F9; /* Latar Belakang Sangat Cerah */
+        --color-light: #F4F7F9; 
         --font-heading: 'Arial', sans-serif;
         --font-body: 'Verdana', sans-serif;
     }
 
-/* --- PADAM GARISAN MENEGAK OREN DI SEBELAH KIRI --- */
+/* --- ERASE THE ORANGE VERTICAL LINE ON THE LEFT SIDE --- */
 
-/* Menghapuskan border kiri pada item senarai/internship */
+/* Remove left border on list/internship items */
 #work-experience .institution-card,
 #work-experience .timeline-item,
 #work-experience .w3-ul li,
 .institution-card,
 .timeline-item {
     border-left: none !important;
-    padding-left: 0 !important; /* Rapatkan sedikit teks ke kiri selepas border dibuang */
+    padding-left: 0 !important;
 }
 
-/* Jika awak mahu gantikan dengan warna hitam (supaya nampak professional), guna kod bawah ni: */
-/*
-#work-experience .institution-card {
-    border-left: 5px solid #000000 !important;
-}
-*/
-/* --- PADAM GARISAN PANJANG OREN SAHAJA --- */
 
-/* 1. Menyasarkan garisan panjang pada Navigation */
+/* --- ERASE THE LONG ORANGE LINE ONLY --- */
+
+/* 1. Targeting long lines on Navigation */
 #main-navigation .section-title-bar {
     border-bottom: none !important;
     padding-bottom: 0;
 }
 
-/* 2. Menyasarkan garisan panjang pada Work & Internship History */
+/* 2. Targeting long lines on Work & Internship History */
 #work-experience .section-title-bar {
     border-bottom: none !important;
     padding-bottom: 0;
 }
 
-/* 3. Menyasarkan mana-mana bahagian lain yang guna class section-title-bar */
+/* 3. Target any other section using the section-title-bar class */
 .section-title-bar {
     border-bottom: none !important;
 }
 
-/* --- KEKALKAN GARISAN BAWAH TEKS (UNDERLINE) JADI HITAM --- */
+/* --- KEEP THE UNDERLINE OF THE TEXT BLACK --- */
 h2 {
-    border-bottom: 3px solid #000000 !important; /* Garisan ikut panjang teks sahaja */
+    border-bottom: 3px solid #000000 !important; 
     display: inline-block; 
     margin-bottom: 10px;
     padding-bottom: 5px;
 }
-/* --- TUKAR GARISAN NAVIGATION KEPADA HITAM --- */
+/* --- CHANGE NAVIGATION LINE TO BLACK --- */
 
-/* Menyasarkan bar tajuk dalam navigasi */
+/* Targeting the title bar in navigation */
 #main-navigation .section-title-bar {
-    border-bottom: 3px solid #000000 !important; /* Garisan panjang di bawah 'Navigate My Portfolio' */
+    border-bottom: 3px solid #000000 !important; 
     margin-bottom: 20px;
     padding-bottom: 10px;
 }
 
-/* Jika tajuk h2 itu sendiri yang ada garisan */
+/* If the h2 heading itself has a line */
 #main-navigation h2 {
-    border-bottom: none !important; /* Buang garisan lama jika ada */
+    border-bottom: none !important; 
     color: #000000 !important;
 }
 
-/* Memastikan teks waktu di sebelah garisan juga hitam */
+/* Ensure the time text next to the line is also black */
 #current-time-display {
     color: #000000 !important;
     font-weight: bold;
 }
-/* --- TUKAR SEMUA TULISAN JADI HIJAU --- */
+/* --- CHANGE ALL TEXT TO BLACK --- */
 
 body {
     color: #000000 !important;
@@ -91,7 +86,7 @@ h1, h2, h3, h4, h5, h6, p, li, span, small, strong{
     color: #000000 !important;
 }
 
-/* Pautan (Navigation & Social Media) */
+/* Links (Navigation & Social Media) */
 a {
     color: #000000 !important;
     text-decoration: none;
@@ -104,99 +99,96 @@ a {
 .w3-text-grey {
     color: #000000 !important;
 }
-/* Fail: style_custom.css (Gaya Penuh) */
 
-/* --- 1. Reset dan Definisi Global --- */
-/* ... (kod yang lain) ... */
-
-/* --- TUKAR WARNA GARISAN BAWAH H2 --- */
+/* --- CHANGE H2 UNDERLINE COLOR --- */
 h2 {
-    border-bottom: 3px solid #006400 !important; /* Tukar #006400 ke warna pilihan awak */
-    display: inline-block; /* Supaya garisan ikut panjang teks sahaja */
-    padding-bottom: 5px;   /* Jarak antara teks dan garis */
-    margin-bottom: 15px;   /* Jarak antara garis dan kandungan bawah */
+    border-bottom: 3px solid #006400 !important; 
+    display: inline-block; 
+    padding-bottom: 5px;   
+    margin-bottom: 15px;   
 }
+
 /* --- TUKAR WARNA DETAIL ITEM KEPADA HITAM --- */
 
-/* 1. Tukar warna garisan/border pada setiap kotak detail */
+/* 1. Change the line/border color on each detail box */
 .personal-detail-box .detail-item {
-    border-left: 5px solid #000000 !important; /* Garisan tepi jadi hitam */
-    background-color: #f9f9f9 !important;      /* Latar belakang kelabu sangat cair (supaya teks hitam nampak jelas) */
+    border-left: 5px solid #000000 !important; 
+    background-color: #f9f9f9 !important; 
 }
 
-/* 2. Pastikan tajuk kecil (h4) dalam detail item juga warna hitam */
+/* 2. Make sure the small title (h4) in the item details is also black */
 .detail-item h4 {
     color: #000000 !important;
-    border-bottom: 1px solid #000000 !important; /* Garisan bawah tajuk kecil jadi hitam */
+    border-bottom: 1px solid #000000 !important;
 }
 
-/* 3. Pastikan teks kandungan (p) juga warna hitam */
+/* 3. Make sure the content text (p) is also black */
 .detail-item p {
     color: #000000 !important;
 }
 
-/* 4. Jika ada kesan hover (bila letak mouse), tukar jadi hitam/kelabu gelap */
+/* 4. If there is a hover effect (when you place the mouse), change it to black/dark gray */
 .detail-item:hover {
     border-left-color: #333333 !important;
     background-color: #eeeeee !important;
 }
 
-/* --- FIX: KEY RESPONSIBILITIES HITAM TERUS (TANPA HOVER) --- */
+/* --- FIX: KEY RESPONSIBILITIES CONTINUOUSLY BLACK (WITHOUT HOVER) --- */
 
-/* 1. Paksa warna asal jadi hitam (bukan oren) */
+/* 1. Force the original color to be black (not orange) */
 .detail-item, 
 .detail-item h4, 
 .detail-item p,
 #experience-section li,
 .responsibilities-list li {
     color: #000000 !important;
-    border-left-color: #000000 !important; /* Jika ada line tepi oren */
+    border-left-color: #000000 !important;
 }
 
-/* 2. Matikan kesan oren bila cursor lalu (hover) */
+/* 2. Turn off the orange effect when the cursor passes (hover) */
 .detail-item:hover, 
 #experience-section li:hover {
     color: #000000 !important;
     border-left-color: #000000 !important;
-    background-color: #f9f9f9 !important; /* Warna background lembut bila hover */
+    background-color: #f9f9f9 !important; 
 }
 
-/* 3. Jika Key Responsibilities guna simbol/bullet oren, tukar jadi hitam */
+/* 3. If Key Responsibilities use an orange symbol/bullet, change it to black */
 ul li::marker, 
 .w3-ul li::marker {
     color: #000000 !important;
 }
 
-/* --- TUKAR SEMUA KOTAK/CARD KEPADA TEMA HITAM --- */
+/* --- CHANGE ALL BOXES/CARDS TO BLACK THEME --- */
 
-/* 1. Kotak Navigasi (Menu Atas) */
+/* 1. Navigation Box (Top Menu) */
 .nav-card {
     border: 2px solid #000000 !important;
-    background-color: #ffffff !important; /* Latar belakang putih supaya tulisan hitam nampak jelas */
+    background-color: #ffffff !important; 
 }
 
 .nav-card:hover {
-    background-color: #000000 !important; /* Bila hover kotak jadi hitam penuh */
-    color: #ffffff !important;           /* Tulisan dalam kotak jadi putih bila hover */
+    background-color: #000000 !important; 
+    color: #ffffff !important;           
 }
 
 .nav-card:hover * {
-    color: #ffffff !important;           /* Paksa semua teks dalam kotak jadi putih bila hover */
+    color: #ffffff !important;           
 }
 
-/* 2. Kotak Detail (Personal Details) */
+/* 2. Details Box (Personal Details) */
 .personal-detail-box .detail-item {
-    border: 1px solid #000000 !important; /* Bingkai hitam nipis sekeliling kotak */
-    border-left: 8px solid #000000 !important; /* Garisan kiri lebih tebal */
+    border: 1px solid #000000 !important; 
+    border-left: 8px solid #000000 !important; 
     background-color: #ffffff !important;
 }
 
-/* 3. Kotak Movie & Social Media */
+/* 3. Movie & Social Media Box */
 .biodata-movie-card, 
 .social-card {
     border: 2px solid #000000 !important;
     background-color: #ffffff !important;
-    box-shadow: 4px 4px 0px #000000 !important; /* Kesan bayang petak hitam (Retro look) */
+    box-shadow: 4px 4px 0px #000000 !important; 
 }
 
 .biodata-movie-card:hover, 
@@ -205,7 +197,7 @@ ul li::marker,
     transform: translateY(-5px);
 }
 
-/* 4. Garisan pembahagi dalam list (Lagu) */
+/* 4. Dividing line in list (Songs) */
 .w3-ul.w3-border {
     border: 2px solid #000000 !important;
 }
@@ -222,26 +214,18 @@ body {
     line-height: 1.6;
     color: var(--color-text);
     
-    /* ================================================= */
-    /* >>> KEMAS KINI BODY: LATAR BELAKANG GAMBAR <<< */
-    /* ================================================= */
     
-    /* Sila TUKAR 'images/wallpaper_soft.jpg' kepada laluan fail anda */
+    /* Please CHANGE 'images/wallpaper_soft.jpg' to your file path */
     background-image: url('images/ai.jpg'); 
-    background-size: cover;          /* Gambar mengisi seluruh skrin */
-    background-repeat: no-repeat;    /* Jangan ulang gambar */
-    background-attachment: fixed;    /* Gambar kekal bila diskrol */
-    background-color: #f0f0f0;       /* Latar belakang ganti (fallback) */
+    background-size: cover;          
+    background-repeat: no-repeat;    
+    background-attachment: fixed;    
+    background-color: #f0f0f0;       
 }
 
-/* ================================================= */
-/* >>> KEMAS KINI KETERBACAAN KANDUNGAN (SECTION) <<< */
-/* ================================================= */
-/* Anda perlu pastikan semua elemen 'section' mendapat latar belakang semi-lutsinar 
-   supaya teksnya mudah dibaca di atas gambar latar belakang yang baru. */
 section {
-    /* Gantikan background-color: white; dengan latar semi-lutsinar */
-    background-color: rgba(255, 255, 255, 0.95); /* Putih dengan 95% ketelusan */
+    /* Replace background-color: white; with a semi-transparent background */
+    background-color: rgba(255, 255, 255, 0.95);
     padding: 30px;
     margin-bottom: 25px;
     border-radius: 10px;
@@ -249,10 +233,7 @@ section {
     animation: fadeIn 0.8s ease-out;
 }
 
-/* --- 2. Styling Header & Footer --- */
-/* ... (kod yang lain kekal sama) ... */
-
-    /* --- 2. Styling Header & Footer --- */
+    /* --- 2. Header & Footer Styling --- */
     header {
         background-color: whitesmoke;
         color: black;
@@ -288,11 +269,10 @@ section {
         margin-bottom: 25px;
         border-radius: 10px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        /* Animasi pudar global (Fade In) */
         animation: fadeIn 0.8s ease-out;
     }
 
-    /* GAYA LAMA: Guna .section-title-bar untuk h2 yang ada masa */
+    /* OLD STYLE: Use .section-title-bar for h2 with time */
     section h2 {
         color: var(--color-primary);
         font-family: var(--font-heading);
@@ -306,59 +286,50 @@ section {
         to { opacity: 1; transform: translateY(0); }
     }
 
-/* * -----------------------------------------------------------
- * ANIMASI KHAS: MOVERIGHTBACK UNTUK TAJUK
- * -----------------------------------------------------------
- */
-
 @keyframes moverightback {
-    /* Bermula pada kedudukan asal */
     0% {
         transform: translateX(0); 
     }
-    /* Di tengah-tengah kitaran, bergerak ke kanan 10 piksel */
     50% {
         transform: translateX(1100px); 
     }
-    /* Berakhir pada kedudukan asal (0 piksel), bersedia untuk kitaran seterusnya */
     100% {
         transform: translateX(0); 
     }
 }
 
-/* --- ANIMASI PULSE UNTUK SPORTS SECTION --- */
+/* --- PULSE ANIMATION FOR SPORTS SECTION --- */
 
-/* 1. Definisi Gerakan Pulse */
+/* 1. Definition of Pulse Movement */
 @keyframes pulse-animation {
     0% {
         transform: scale(1);
     }
     50% {
-        transform: scale(1.2); /* Membesar sikit */
+        transform: scale(1.2); 
     }
     100% {
         transform: scale(1);
     }
 }
 
-/* 2. Guna pada tajuk atau kotak sukan (Sports That I Play) */
-/* Saya sasarkan elemen h2 dalam section sukan atau class card sukan awak */
+/* 2. Use on sports titles or boxes (Sports That I Play) */
 #sports-section h2, 
 .sport-card:hover {
-    display: inline-block; /* Perlu untuk transform berfungsi */
+    display: inline-block; 
     animation: pulse-animation 1.5s infinite ease-in-out;
-    color: #000000 !important; /* Kekalkan tema hitam awak */
+    color: #000000 !important;
 }
 
-/* Jika awak nak dia pulse HANYA bila cursor sentuh (hover) */
+/* If you want it to pulse ONLY when the cursor touches (hover) */
 .sport-item-box:hover {
     animation: pulse-animation 0.8s infinite;
     cursor: pointer;
 }
 
-/* --- ANIMASI SHAKE UNTUK PERSONAL DETAILS --- */
+/* --- SHAKE ANIMATION FOR PERSONAL DETAILS --- */
 
-/* 1. Definisi Gerakan Shake */
+/* 1. Definition of Shake Movement */
 @keyframes shake-animation {
     0% { transform: translateX(0); }
     25% { transform: translateX(-5px); }
@@ -367,102 +338,97 @@ section {
     100% { transform: translateX(0); }
 }
 
-/* 2. Guna pada Section Personal Details atau Detail Item */
-/* Pilihan A: Shake satu kotak besar Personal Details bila hover */
+/* 2. Use in the Personal Details or Item Details section */
 #personal-details:hover {
     animation: shake-animation 0.5s ease-in-out;
 }
 
-/* Pilihan B: Shake setiap kotak info kecil (Full Name, Age, dll) secara individu */
+/* Option B: Shake each small info box (Full Name, Age, etc) individually */
 .personal-detail-box .detail-item:hover {
     animation: shake-animation 0.4s ease-in-out;
     cursor: pointer;
-    border-color: #000000 !important; /* Pastikan border tetap hitam */
+    border-color: #000000 !important; 
 }
-/* --- ANIMASI GLOW UNTUK FAVOURITE SONGS --- */
+/* --- GLOW ANIMATION FOR FAVORITE SONGS --- */
 
-/* 1. Definisi Cahaya Glow */
+/* 1. Definition of Glow Light */
 @keyframes glow-animation {
     from {
         box-shadow: 0 0 5px #000000;
     }
     to {
-        box-shadow: 0 0 20px #000000, 0 0 30px #000000; /* Cahaya hijau neon ikut tema asal awak */
+        box-shadow: 0 0 20px #000000, 0 0 30px #000000; 
     }
 }
 
-/* --- ANIMASI FLOATING UNTUK FAVOURITE MOVIES --- */
+/* --- FLOATING ANIMATION FOR FAVORITE MOVIES --- */
 
-/* 1. Definisi Gerakan Terapung (Floating) */
+/* 1. Definition of Floating Movement (Floating) */
 @keyframes floating-animation {
     0% {
         transform: translateY(0px);
     }
     50% {
-        transform: translateY(-20px); /* Naik ke atas sikit */
+        transform: translateY(-20px); 
     }
     100% {
         transform: translateY(0px);
     }
 }
 
-/* --- ANIMASI BOUNCE UNTUK SOCIAL MEDIA --- */
+/* --- BOUNCE ANIMATION FOR SOCIAL MEDIA --- */
 
-/* 1. Definisi Gerakan Melantun (Bounce) */
+/* 1. Definition of Bounce Movement */
 @keyframes bounce-animation {
     0%, 20%, 50%, 80%, 100% {
         transform: translateY(0);
     }
     40% {
-        transform: translateY(-20px); /* Melompat ke atas */
+        transform: translateY(-20px); 
     }
     60% {
-        transform: translateY(-10px); /* Melantun sikit */
+        transform: translateY(-10px); 
     }
 }
 
-/* 2. Guna pada kotak media sosial (Social Media Accounts) */
+/* 2. Use on social media boxes (Social Media Accounts) */
 .social-card:hover {
     animation: bounce-animation 1s ease;
     cursor: pointer;
-    border-color: #000000 !important; /* Kekalkan tema hitam */
-    background-color: #f9f9f9 !important; /* Warna berubah sikit bila hover */
+    border-color: #000000 !important; 
+    background-color: #f9f9f9 !important; 
 }
 
-/* 3. Animasi tambahan untuk ikon di dalamnya (optional) */
+/* 3. Additional animation for the icon inside (optional) */
 .social-card:hover .social-icon {
-    color: #000000 !important; /* Ikon jadi hitam pekat bila melantun */
+    color: #000000 !important; 
     transition: color 0.3s ease;
 }
-/* 2. Guna pada kotak filem (Favourite Movies) */
-/* Kita sasarkan class card yang digunakan dalam section movies */
+/* 2. Use on movie box (Favourite Movies) */
 .biodata-movie-card:hover {
     animation: floating-animation 2s ease-in-out infinite;
     cursor: pointer;
-    box-shadow: 0 15px 25px rgba(0,0,0,0.3) !important; /* Tambah bayang bila dia "terbang" */
+    box-shadow: 0 15px 25px rgba(0,0,0,0.3) !important; 
     border-color: #000000 !important;
-    z-index: 10; /* Supaya dia berada di atas elemen lain */
+    z-index: 10; 
 }
-/* 2. Guna pada senarai lagu (Favourite Songs) */
-/* Kita sasarkan kotak senarai lagu dalam biodata awak */
+/* 2. Use on the song list (Favorite Songs) */
 #favourite-songs .w3-ul li:hover {
     animation: glow-animation 1.5s infinite alternate;
-    background-color: #f0f0f0 !important; /* Tukar sikit warna background bila hover */
-    border-color: #2ecc71 !important;    /* Border bertukar jadi hijau glow */
+    background-color: #f0f0f0 !important; 
+    border-color: #2ecc71 !important;    
     cursor: pointer;
-    transform: scale(1.02);             /* Kotak membesar sikit */
+    transform: scale(1.02);            
     transition: all 0.3s ease;
 }
-/* Gaya untuk tajuk "ABOUT ME !!!" dalam biodata.html */
+/* Style for the title "ABOUT ME !!!" in biodata.html */
 .text-ticker h2 {
-    /* PENTING: Perlu ditetapkan sebagai blok atau inline-block agar 'transform' berfungsi */
     display: inline-block; 
     
-    /* Aplikasi Animasi: (Nama Animasi BARU) (Tempoh) (Jenis) (Ulang) */
-    animation: moverightback 10s ease-in-out infinite; /* Guna nama keyframe BARU */
+    animation: moverightback 10s ease-in-out infinite; 
 }
 
-    /* Styling untuk tag <pre> */
+    /* Styling for the <pre> tag */
     pre.w3-code {
         background-color: #2e3440; 
         color: #a3be8c; 
@@ -471,7 +437,7 @@ section {
         overflow-x: auto;
     }
 
-    /* --- 4. Custom Marker untuk Senarai --- */
+    /* --- 4. Custom Markers for Lists --- */
     ul.custom-marker {
         list-style: none;
     }
@@ -481,7 +447,7 @@ section {
         font-weight: bold;
     }
 
-    /* --- 5. Navigation Box Styles (Wajib Ada di semua fail HTML) --- */
+    /* --- 5. Navigation Box Styles (Required in all HTML files) --- */
     .navigation-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
@@ -528,14 +494,13 @@ section {
         display: flex;
         justify-content: space-between;
         align-items: flex-end; 
-        /* Ambil alih border dan padding dari section h2 global */
         border-bottom: 3px solid var(--color-secondary);
         padding-bottom: 10px;
         margin-bottom: 20px;
     }
 
     .section-title-bar h2 {
-  text-ticker      /* Buang border dari h2 supaya tidak bertindih dengan border div */
+  text-ticker     
         border-bottom: none !important;
         padding-bottom: 0 !important;
         margin-bottom: 0 !important;
@@ -550,12 +515,11 @@ section {
         white-space: nowrap;
     }
 
-/* --- 8. Gaya untuk Movie Trailer & Video Lokal (Global) --- */
+/* --- 8. Style for Movie Trailer & Local Video (Global) --- */
 .movie-trailer-container {
     width: 160px; 
     height: 90px; 
-    /* float: left;  <--- PADAM ATAU KOMEN BARIS INI */
-    margin-right: 15px; /* Anda juga boleh padam ini jika mahu video di tengah */
+    margin-right: 15px; 
     border-radius: 4px;
     overflow: hidden; 
 } 
@@ -586,14 +550,7 @@ section {
         }
     }
 
-/* * -----------------------------------------------------------
- * GAYA BERSIH & DIPAKSA: FAMILY MEMBER CARDS (2xN, Pop-Out Besar)
- * -----------------------------------------------------------
- */
-
-/* =================================================== */
-/* 1. GAYA UNTUK AHLI KELUARGA (2 SEBARIS) - family-grid */
-/* =================================================== */
+/* 1. STYLE FOR FAMILY MEMBERS (2 IN A ROW) - family-grid*/
 
 .family-grid {
     display: flex;
@@ -603,33 +560,27 @@ section {
 }
 
 .family-member-card {
-    /* >>> PERUBAHAN KRITIKAL: Tukar lebar kotak kepada 40% <<< */
-    flex: 0 0 calc(30% - 20px) !important; /* Kotak kini lebih langsing */
+    flex: 0 0 calc(30% - 20px) !important;
     
     margin: 10px;
     text-align: center;
     
-    /* PADDING KEKAL SAMA (30px) untuk menjaga ketinggian yang anda suka */
     padding: 30px; 
     
     background-color: white; 
     border-radius: 8px;
     
-    /* GAYA Box Shadow dan Transisi kekal sama */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
 }
 
-/* KESAN HOVER: POP-OUT LEBIH DRAMATIK (Lift + Shadow) */
+/* HOVER EFFECT: MORE DRAMATIC POP-OUT (Lift + Shadow) */
 .family-member-card:hover {
-    transform: translateY(-12px) !important; /* LIFT/POP-OUT -12px */
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3) !important; /* SHADOW LEBIH BESAR */
+    transform: translateY(-12px) !important; 
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3) !important;
 }
 
-
-
 .family-member-card img {
-    /* >>> PERUBAHAN A: SAIZ GAMBAR DIKEMBALIKAN KE 180PX <<< */
     width: 180px !important; 
     height: 180px !important;
     
@@ -639,26 +590,22 @@ section {
     margin-bottom: 15px; 
     border: 4px solid var(--color-primary);
     
-    /* Tambah transisi untuk kesan pop-out gambar yang lancar */
     transition: transform 0.3s ease-in-out; 
 }
 
-/* KESAN BARU: Gambar (di dalam kotak) keluar dari frame */
+/* NEW EFFECT: Picture (in the box) comes out of the frame */
 .family-member-card:hover img {
-    transform: scale(1.15); /* Besarkan gambar 10% untuk kesan pop-out */
+    transform: scale(1.15); 
 }
 
-/* Media query untuk skrin kecil, kembali ke 1 sebaris */
+/* Media query for small screens, back to 1 inline */
 @media (max-width: 768px) {
     .family-member-card {
         flex: 0 0 calc(100% - 20px) !important; 
     }
 }
 
-
-/* =================================================== */
-/* 2. GAYA UNTUK FAMILY ALBUM (2 SEBARIS) - family-album-grid */
-/* =================================================== */
+/* 2. STYLE FOR FAMILY ALBUM (2 IN A ROW) - family-album-grid */
 
 .family-album-grid {
     display: flex;
@@ -669,28 +616,26 @@ section {
 }
 
 .album-item {
-    /* KEDUDUKAN 2xN DIPAKSA */
-    flex: 0 0 calc(50% - 16px) !important; /* MESTI 50% UNTUK 2 SEBARIS */
+    flex: 0 0 calc(50% - 16px) !important; 
     margin: 8px !important; 
     position: relative; 
     overflow: hidden; 
-    height: 300px !important; /* Ketinggian yang lebih baik untuk 2 sebaris */
+    height: 300px !important; 
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     border-radius: 4px;
 }
 
-/* Media Query (Responsif) - Untuk telefon bimbit */
+/* Media Query (Responsive) - For mobile phones */
 @media (max-width: 600px) {
     .album-item {
-        /* 1 gambar sebaris pada skrin telefon */
         flex: 0 0 calc(100% - 16px) !important; 
         height: 250px !important;
     }
 }
 
 
-/* 3. Gaya Kapsyen & Hover - (Kekal sama) */
+/* 3. Caption & Hover Style - (Remains the same) */
 
 .album-photo {
     width: 100%;
@@ -715,7 +660,7 @@ section {
     font-size: 14px; 
     font-weight: bold;
     
-    top: 100%; /* Sembunyikan di bawah */
+    top: 100%; 
     
     transition: top 0.4s ease-out; 
     opacity: 1; 
@@ -726,19 +671,19 @@ section {
 }
 
 .album-item:hover .caption-album {
-    top: 80%; /* Tunjukkan di 80% (iaitu 20% dari bawah) */
+    top: 80%; 
 }
 
-    /* --- 11. Gaya Khusus Laman Biodata --- */
+    /* --- 11. Biodata Page Specific Style --- */
 
-    /* CSS KHAS UNTUK TAJUK: Memaksa pemusatan teks (Digunakan pada #immediate-family) */
+    /* SPECIAL CSS FOR TITLE: Force text centering (Used on #immediate-family) */
     #immediate-family h2 {
         text-align: center !important; 
     }
 
-/* --- 11. Gaya Khusus Laman Biodata (HANYA UNTUK LAGU) --- */
+/* --- 11. Specific Style of Biodata Page (ONLY FOR SONGS) --- */
 
-    /* Menambah class khusus supaya tidak mengusik elemen lain */
+    /* Adding a special class so as not to disturb other elements */
     .song-list-item {
         padding: 20px !important; 
         overflow: hidden; /* Membersihkan float */
@@ -746,16 +691,16 @@ section {
     }
 
     .song-cover-image {
-        width: 150px !important; /* Saiz dibesarkan dari 70px ke 150px */
+        width: 150px !important; 
         height: 150px !important;
         object-fit: cover;
         border-radius: 12px; 
         margin-right: 25px;
-        float: left; /* Gambar di kiri */
+        float: left; 
         box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     }
 
-    /* Memastikan info lagu dan audio kekal di sebelah kanan gambar */
+    /* Ensures song and audio info remains on the right side of the image */
     .song-info-wrapper {
         display: block; 
         overflow: hidden; 
@@ -768,13 +713,13 @@ section {
         margin-top: 5px;
     }
 
-    /* Memberi ruang kepada pemain audio di bawah teks */
+    /* Give space to the audio player below the text */
     .audio-wrapper {
         margin-top: 20px;
         display: block;
     }
 
-    /* [START] Gaya untuk Layout Gambar dan Butiran Peribadi */
+    /* [START] Styles for Layout Pictures and Personal Details */
     .personal-info-layout {
         display: flex; 
         flex-wrap: wrap; 
@@ -814,9 +759,9 @@ section {
             max-height: 400px;
         }
     }
-    /* [END] Gaya untuk Layout Gambar dan Butiran Peribadi */
+    /* [END] Styles for Picture Layout and Personal Details */
 
-    /* Gaya untuk kotak butiran peribadi */
+    /* Styles for personal details boxes */
     .personal-detail-box {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
@@ -841,22 +786,22 @@ section {
         font-weight: bold;
     }
 
-    /* --- 12. Gaya Khusus Laman Portfolio/Pendidikan --- */
+    /* --- 12. Portfolio/Education Site Specific Styles --- */
 
-    /* Gaya untuk kad institusi (Education/Experience) */
+    /* Style for institution card (Education/Experience) */
     .institution-card {
-        display: block; /* Susun secara menegak */
+        display: block; 
         gap: 0; 
         align-items: flex-start; 
         padding: 0; 
         margin-bottom: 20px;
     }
 
-    /* CSS untuk LOGO (225px x 225px) */
+    /* CSS for LOGO (225px x 225px) */
     .institution-details img {
         width: 150px; 
         height: 150px; 
-        object-fit: contain; /* Penting agar logo tidak herot */
+        object-fit: contain; 
         border-radius: 8px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         margin-bottom: 10px; 
@@ -864,18 +809,14 @@ section {
         margin-left: 0; 
         margin-right: auto;
         
-        /* PENTING: Untuk animasi yang lancar */
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         cursor: default; 
     }
 
-    /* KURSOR TANGAN DAN KESAN GERAKAN MESTI MUNCUL APABILA HOVER PADA IMEJ */
+    /* HAND CURSOR AND MOTION EFFECTS MUST APPEAR WHEN HOVERING ON IMAGE */
     .institution-details img:hover {
-        /* 1. KESAN ZOOM/GERAKAN: Membesarkan logo 5% */
         transform: scale(1.05);
-        /* 2. KURSOR TANGAN (Mengatasi Link <a>) */
         cursor: pointer !important; 
-        /* Pilihan: Anda boleh tambah bayangan yang lebih jelas untuk kesan "timbul" */
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     }
 
@@ -885,21 +826,19 @@ section {
         padding: 20px; 
     }
 
-    /* ... (Gaya lain di bawah) ... */
+    /* ... (Other styles below) ... */
 
-    /* Gaya untuk jadual GPA/Gred */
+    /* Style for GPA/Grade table */
     .gpa-table th, .gpa-table td {
         text-align: center;
     }
 
-    /* Gaya untuk senarai kursus */
+    /* Styles for course lists */
     #courses .w3-ul li {
-        /* Perhatian: Anda mungkin perlu menambah definisi untuk --w3-theme-l5 jika ia tidak didefinisikan */
-        /* Buat masa ini, saya anggap ia akan berfungsi atau akan ditambah di masa hadapan */
         background-color: var(--w3-theme-l5); 
     }
 
-    /* CSS untuk LAYOUT MENDATAR (Primary/Secondary Column) */
+    /* CSS for HORIZONTAL LAYOUT (Primary/Secondary Column) */
     .primary-layout {
         display: flex; 
         gap: 20px; 
@@ -911,22 +850,17 @@ section {
         min-width: 300px; 
     }
 
-    /* CSS KHAS UNTUK GARIS MASA (TIMELINE) */
+    /* SPECIAL CSS FOR TIMELINES */
     .timeline-item {
         border-left: 4px solid var(--color-secondary);
         padding-left: 20px;
         margin-bottom: 30px;
     }
 
-    /* * -----------------------------------------------------------
-     * PENAMBAHAN GAYA KHUSUS EDUCATION (UNTUK KEPUTUSAN/DETAIL)
-     * -----------------------------------------------------------
-     */
-
-    /* GAYA UNTUK SENARAI KEPUTUSAN (OL, UL) DI DALAM KAD INSTITUSI */
+    /* STYLE FOR LIST OF RESULTS (OL, UL) IN INSTITUTION CARD */
     .institution-card ol,
     .institution-card ul {
-        padding-left: 20px; /* Jarak kiri untuk senarai */
+        padding-left: 20px; 
         margin-top: 5px;
     }
     .institution-card ol li,
@@ -936,7 +870,7 @@ section {
         color: var(--color-text);
     }
 
-    /* GAYA UNTUK TAJUK-TAJUK DI DALAM KAD INSTITUSI */
+    /* STYLE FOR HEADINGS IN INSTITUTIONAL CARDS */
     .institution-card h3 {
         margin-top: 0;
         margin-bottom: 5px;
@@ -946,59 +880,47 @@ section {
         margin-top: 10px;
         margin-bottom: 5px;
         font-size: 1.1em;
-        color: var(--color-secondary); /* Aksen warna untuk tajuk keputusan */
+        color: var(--color-secondary); 
         text-transform: uppercase;
         border-bottom: 1px dashed #cccccc;
         padding-bottom: 3px;
     }
 
-    /* Responsiveness Tambahan untuk Layout Pendidikan/Experience */
+    /* Additional Responsiveness for Education/Experience Layout */
     @media (max-width: 768px) {
         .institution-details img {
             width: 150px;
             height: 150px;
-            margin: 0 auto 10px auto; /* Pusat imej pada peranti kecil */
+            margin: 0 auto 10px auto; 
         }
         .institution-card {
-            text-align: center; /* Pusatkan teks pada peranti kecil */
+            text-align: center;
         }
         .institution-card ol,
         .institution-card ul {
-            text-align: left; /* Biarkan senarai berbaris ke kiri */
+            text-align: left; 
             display: inline-block;
             padding-left: 0;
         }
     }
-    /* Fail: style_custom.css */
-    /* ... (kod anda sebelum ini berakhir) ... */
 
-    /* GAYA KHAS UNTUK GAMBAR AKTIVITI/PREMIS SEKOLAH */
+    /* ... (your previous code expired) ... */
+
+    /* SPECIAL STYLE FOR PHOTOGRAPHY OF SCHOOL ACTIVITIES/PRIMISES */
     .school-activity-img {
         display: block;
-        /* Tetapkan transisi untuk kesan gerakan yang lancar */
         transition: transform 0.4s ease, box-shadow 0.4s ease;
-        /* Kursor pointer untuk menunjukkan ia interaktif */
         cursor: pointer;
     }
 
     .school-activity-img:hover {
-        /* Mebesarkan imej 3% (skala 1.03) */
         transform: scale(1.03); 
-        /* Menambah sedikit bayangan untuk kesan timbul */
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     }
 
-/* * -----------------------------------------------------------
- * -----------------------------------------------------------
- * --- 13. Gaya Khusus Laman Galeri (Gallery Page) ---
- * (DIUBAH/DIGANTI: Gaya Kapsyen Hover Penuh Dipindahkan dari gallery.html)
- * -----------------------------------------------------------
- */
-
-/* Gaya Grid Galeri Utama */
+/* Main Gallery Grid Style */
 .gallery-grid {
     display: grid;
-    /* Pastikan ini repeat(4, 1fr) untuk 4 atas, 4 bawah (Total 8) */
     grid-template-columns: repeat(4, 1fr); 
     gap: 20px; 
     padding: 20px 0; 
@@ -1022,7 +944,7 @@ section {
     display: block;
 }
 
-/* Kapsyen Album Utama (Kekal Aktif dengan Animasi Hover) */
+/* Main Album Caption (Stay Active with Hover Animation) */
 .gallery-item .caption {
     position: absolute;
     bottom: 0;
@@ -1036,65 +958,59 @@ section {
     
     /* Kunci: Sembunyikan secara lalai dan tambah peralihan */
     opacity: 0; 
-    transform: translateY(100%); /* Sembunyikan di bawah */
+    transform: translateY(100%); 
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Kunci: Apabila hover pada item induk, tunjukkan kapsyen */
+/* Key: When hovering over the parent item, show the caption */
 .gallery-item:hover .caption {
-    opacity: 1; /* Tunjukkan */
-    transform: translateY(0); /* Alihkan ke posisi asal (bottom: 0) */
+    opacity: 1;
+    transform: translateY(0); 
 }
 
-/* (Gaya Modal Foto dan Album Keluarga tidak dipindahkan kerana ia sudah ada versi yang lebih baik di style_custom.css) */
+/* (Photo and Family Album Modal styles were not migrated because they already have a better version in style_custom.css) */
 
-/* * -----------------------------------------------------------
- * GAYA KRITIKAL MODAL FOTO (OVERLAY ZOOM)
- * (Gaya ini memastikan modal meliputi skrin dan berada di atas semua)
- * -----------------------------------------------------------
- */
-
-/* 1. Kontena Modal Utama */
+/* 1. Main Capital Container */
 #photo-modal {
-    display: none; /* Sembunyikan secara lalai */
+    display: none; 
     position: fixed; 
     
-    /* GAYA KRITIKAL: Z-INDEX, KETINGGIAN & LEBAR */
-    z-index: 9999; /* SANGAT TINGGI: Pastikan ia di atas semua */
+    /* CRITICAL STYLE: Z-INDEX, HEIGHT & WIDTH */
+    z-index: 9999; 
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     
     overflow: auto; 
-    background-color: rgba(0, 0, 0, 0.9); /* Latar belakang hitam lutsinar */
-    padding-top: 60px; /* Jarak dari atas */
+    background-color: rgba(0, 0, 0, 0.9); 
+    padding-top: 60px; 
 }
 
-/* W3.CSS Override: Pastikan modal muncul apabila kelas ini ditambah */
+/* W3.CSS Override: Ensure modal appears when this class is added */
 .w3-show {
     display: block !important;
 }
 
-/* 2. Kontena Kandungan Modal */
+/* 2. Capital Content Container */
 .modal-content-custom {
     margin: auto;
     display: block;
     width: 90%;
-    max-width: 700px; /* Lebar maksimum untuk imej */
+    max-width: 700px;
     padding-bottom: 40px; 
 }
 
-/* 3. Imej di dalam Modal */
+/* 3. Images in Modal */
 #modal-image {
     width: 100%;
     height: auto;
-    max-height: 80vh; /* Ketinggian maksimum 80% dari viewport height */
+    max-height: 80vh; 
     display: block;
-    object-fit: contain; /* Penting: memastikan imej dimuatkan sepenuhnya tanpa dipotong */
+    object-fit: contain; 
 }
 
-    /* Memastikan 'X' (Butang Tutup) berada di atas modal */
+    /* Ensure the 'X' (Close Button) is above the capital */
     #photo-modal .w3-button {
         position: absolute;
         right: 15px;
@@ -1104,47 +1020,40 @@ section {
         font-weight: bold;
         cursor: pointer;
         z-index: 10000; 
-        background: none; /* Buang latar belakang butang w3.css yang mungkin mengganggu */
+        background: none; 
     }
-    /* ----------------------------------------------------------- */
+   
 
-    /* --- 14. Gaya KHAS UNTUK ALBUM YANG DIBUKA (SPA) --- */
+    /* --- 14. SPECIAL STYLE FOR OPENED ALBUM (SPA) --- */
 
-    /* PENTING: Untuk memastikan Album Raya mempunyai padding yang betul seperti section biasa */
+    /* IMPORTANT: To ensure that the Raya Album has the correct padding like a regular section */
     #album-eid-fitri, #album-uitm-campus, #album-family-gathering, #album-coding-setup {
-        /* Mengatasi padding-top: 20px yang diletakkan secara inline */
         padding: 30px; 
         margin-bottom: 25px;
         border-radius: 10px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        /* Animasi pudar global kekal */
         animation: fadeIn 0.8s ease-out;
     }
 
-    /* Memastikan butang 'Kembali' terletak betul */
+    /* Ensure the 'Back' button is correctly positioned */
     #album-photos-content p a.w3-button {
         margin-bottom: 20px;
         margin-top: 10px;
     }
-    /* --- 15. Fix Kebolehcapan & Konflik W3-Hide (Penting) --- */
 
-    /* PENTING: Memaksa elemen untuk tersembunyi apabila kelas w3-hide digunakan */
+    /* --- 15. Fix Accessibility and W3-Hide Conflicts (Important) --- */
+
+    /* IMPORTANT: Forces elements to be hidden when the w3-hide class is used */
     .w3-hide {
         display: none !important;
     }
 
-    /* Memastikan elemen Galeri Utama tidak bertindih keutamaan tersembunyi */
+    /* Ensure that Main Gallery elements do not overlap hidden priorities */
     #album-eid-fitri, #album-uitm-campus, #album-family-gathering, #album-coding-setup {
-        /* Pastikan ia mengambil display: none daripada .w3-hide secara default */
         display: none; 
     }
 
-/* * -----------------------------------------------------------
- * GAYA KHUSUS UNTUK KAD CGPA
- * -----------------------------------------------------------
- */
 .cgpa-card {
-    /* Gunakan warna tema yang lebih gelap atau aksen */
     background-color: var(--color-primary) !important; 
     text-align: center;
     padding: 15px 10px;
@@ -1160,69 +1069,65 @@ section {
 }
 
 .cgpa-card .w3-xxlarge {
-    /* Penekanan saiz yang sangat besar untuk nombor CGPA */
     font-size: 2.5em !important; 
     font-weight: bold;
-    color: var(--color-secondary) !important; /* Warna aksen (Kuning) */
+    color: var(--color-secondary) !important;
     display: inline-block;
     margin-left: 10px;
 }
 
-/* Gaya asas untuk jadual PNGS/PNGK */
+/* Basic style for PNGS/PNGK tables */
 .institution-details table.w3-table {
     width: 100%;
-    /* Guna warna latar belakang yang sedikit berbeza untuk membezakan dari kad */
     background-color: #fcfcfc; 
     border-radius: 6px;
     border: 1px solid #ddd;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
-/* Header Jadual (Warna Tema) */
+/* Table Header (Theme Color) */
 .institution-details table.w3-table thead tr.w3-theme-d1 {
     background-color: var(--color-primary) !important;
     color: white;
 }
 
-/* Footer Jadual (Untuk CGPA) */
+/* Table Footer (For CGPA) */
 .institution-details table.w3-table tfoot tr.w3-theme-l1 {
-    background-color: var(--color-light) !important; /* Latar belakang cerah */
+    background-color: var(--color-light) !important; 
     font-weight: bold;
-    border-top: 2px solid var(--color-secondary); /* Garisan pemisah yang jelas */
+    border-top: 2px solid var(--color-secondary); 
 }
 
-/* Teks dan Pemusatan dalam Sel */
+/* Text and Centering in Cells */
 .institution-details table.w3-table th,
 .institution-details table.w3-table td {
-    padding: 7px 5px; /* *Telah Diubah* */
+    padding: 7px 5px; 
     text-align: center; 
     vertical-align: middle;
-    font-size: 0.8em; /* *Telah Diubah* */
+    font-size: 0.8em; 
 }
 
-/* Penegasan untuk CGPA */
+/* Affirmation for CGPA*/
 .institution-details table.w3-table tfoot td.w3-large {
-    font-size: 1.0em !important; /* *Telah Diubah* */
+    font-size: 1.0em !important; 
     color: var(--color-primary);
 }
 
-/* Tajuk Hasil Keputusan */
+/* Title Result Result */
 .institution-details h4.w3-text-theme {
-    /* Mengatasi border-bottom sedia ada jika ia mengganggu */
     border-bottom: 1px solid var(--color-primary); 
     padding-bottom: 5px;
     margin-bottom: 10px;
     font-size: 1.2em;
 }
 
-/* Pastikan senarai keputusan (UPSR/SPM) berbaris ke kiri dalam kad besar */
+/* Make sure the list of results (UPSR/SPM) is lined up on the left in the large card */
 .institution-card .institution-details ol,
 .institution-card .institution-details ul {
-    /* Kekalkan barisan kiri untuk senarai keputusan sekolah */
     text-align: left;
 }
 
-/* Responsiveness: Pastikan jadual masih boleh dibaca pada peranti kecil */
+/* Responsiveness: Make sure the table is still readable on small devices */
 @media (max-width: 600px) {
     .institution-details table.w3-table th,
     .institution-details table.w3-table td {
@@ -1231,83 +1136,74 @@ section {
     }
 }
 
-/* --- 16. GAYA KHAS UNTUK MEDIA DI DALAM KAD PENGALAMAN (PENTING) --- */
+/* --- 16. SPECIAL STYLE FOR MEDIA IN EXPERIENCE CARDS (IMPORTANT) --- */
 
-/* Tetapkan gaya pada bekas utama yang memegang video dan gambar */
+/* Set styles on the main container that holds videos and images */
 .institution-card .w3-row.w3-small {
-    /* Pastikan ia mengambil lebar penuh kad */
     width: 100%; 
-    display: flex; /* Guna flexbox untuk mengurus susun atur media */
+    display: flex; 
     flex-wrap: wrap; 
 }
 
-/* Memastikan iframe video mengambil lebar yang betul dan tidak di-float */
+/* Ensure video iframes take the correct width and are not floated */
 .institution-card iframe {
-    /* Menghalang sebarang konflik float jika ada */
     float: none !important;
 }
-/* GAYA KHAS UNTUK MEDIA DI DALAM KAD PENGALAMAN (FIX PADDING) */
-/* Memastikan bekas utama media (w3-container) mempunyai jarak kiri/kanan yang betul */
+
+/* SPECIAL STYLES FOR MEDIA IN EXPERIENCE CARDS (FIX PADDING) */
 .institution-card .w3-container.w3-padding-small {
-    /* Padding asal w3-ul li adalah 15px 16px. Kita gunakan padding yang lebih baik */
     padding-left: 16px !important;
     padding-right: 16px !important;
 }
 
-/* Fix untuk w3-row-padding di dalam kad */
+/* Fix for w3-row-padding inside cards */
 .institution-card .w3-row-padding {
-    /* Guna margin negatif untuk menampung padding di dalam w3-half, 
-       tetapi kita perlu memastikan ia tidak keluar daripada kotak utama. 
-       Margin 0 -8px dalam HTML anda sudah OK, tetapi kita override padding atas/bawah */
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-/* --- 17. FIX GAYA UNTUK MEDIA DI DALAM KAD GARIS MASA (PENTING) --- */
+    /* --- 17. FIX STYLE FOR MEDIA IN TIMELINE CARDS (IMPORTANT) --- */
 
-/* 17a. Pembetulan pada item garis masa induk (untuk mengelak overhang) */
+/* 17a. Correction to parent timeline item (to avoid overhang) */
 .timeline-item {
-    overflow: auto; /* Memastikan ia membungkus kandungan float/margin negatif */
+    overflow: auto; 
     padding-right: 20px; 
-    /* Padding kiri sudah ditetapkan oleh gaya garis masa asal */
 }
 
-/* 17b. FIX UTAMA: Memaksa w3-row-padding untuk bekerja dalam konteks ini */
+/* 17b. MAJOR FIX: Force w3-row-padding to work in this context */
 .timeline-item .w3-row-padding {
-    /* 1. Mengimbangi Margin Negatif W3.CSS */
+
     width: 100%;
     margin-left: 0;
     margin-right: 0; 
 
-    /* 2. Memaksa susun atur lajur bersebelahan pada desktop/tablet */
     display: flex;
     flex-wrap: wrap; 
 }
 
-/* 17c. Memastikan setiap lajur (w3-half) mengambil 50% ruang yang betul */
+/* 17c. Ensure each column (w3-half) takes up the correct 50% of the space */
 .timeline-item .w3-row-padding > .w3-half {
     width: 50%;
-    box-sizing: border-box; /* Memastikan padding 0 8px dalam HTML tidak menambah lebar */
+    box-sizing: border-box; 
 }
 
-/* 17d. Responsiveness: Pada skrin kecil (mobile), biarkan ia kembali ke 100% */
+/* 17d. Responsiveness: On small screens (mobile), let it return to 100% */
 @media (max-width: 600px) {
     .timeline-item .w3-row-padding > .w3-half {
-        width: 100%; /* Setiap lajur mengambil lebar penuh */
+        width: 100%; 
     }
 }
 
-/* --- 18. GAYA KHAS UNTUK VIDEO RESPONSIVE 16:9 --- */
+/* --- 18. SPECIAL STYLES FOR 16:9 RESPONSIVE VIDEOS --- */
 .video-responsive-container {
     position: relative;
-    /* Formula 16:9: (9/16) * 100 = 56.25% */
     padding-bottom: 56.25%; 
-    padding-top: 0; /* Buang padding-top 25px yang digunakan untuk iframe YouTube */
+    padding-top: 0; 
     height: 0;
     overflow: hidden;
 }
 
-/* Sasarkan kedua-dua iframe DAN tag video */
+/* Target both iframe AND video tag */
 .video-responsive-container iframe,
 .video-responsive-container video { 
     position: absolute;
@@ -1317,25 +1213,17 @@ section {
     height: 100%;
     border: none;
     display: block;
-    /* Memastikan video memenuhi ruang yang diberikan tanpa meregang */
     object-fit: cover; 
 }
 
-        /* ================================================= */
-        /* === CSS KHAS UNTUK SLIDESHOW GAMBAR PROFIL (VERSI BULAT) === */
-        /* ================================================= */
-
-        /* Kontena utama slideshow (Dibuat Bulat) */
+        /* Main slideshow container (Rounded) */
         .slideshow-container {
-            /* Tetapkan lebar dan tinggi yang sama untuk mencipta segi empat sama */
             width: 350px; 
             height: 350px;
             position: relative;
             margin: 20px auto; 
             cursor: pointer; 
-            /* *** INI KUNCI UNTUK BENTUK BULAT *** */
             border-radius: 50%; 
-            /* Sempadan dan Bayangan yang lembut */
             border: 2px solid #ddd;
             box-shadow: 0 8px 16px rgba(0,0,0,0.2);
             background-color: #ffffff; 
@@ -1343,18 +1231,16 @@ section {
             padding: 0; 
         }
 
-        /* Gaya untuk setiap slaid (Gambar) */
+        /* Styles for each slide (Picture) */
         .mySlides {
-            /* Height dan Width mesti sama dengan container untuk mengisi ruang bulat */
             width: 100%; 
             height: 100%;
             display: none; 
             text-align: center;
         }
 
-        /* Gaya Imej dalam slaid */
+        /* Image Styles in slides */
         .slideshow-container img {
-            /* Gambar diisi penuh ke dalam kontena bulat, tetapi dibiarkan 50% border-radius */
             width: 100%; 
             height: 100%;
             object-fit: cover;
@@ -1363,21 +1249,20 @@ section {
             border-radius: 50%; 
             box-sizing: border-box;
             
-            /* Bingkai Luar Warna Tema */
             border: 5px solid var(--w3-theme); 
             
             box-shadow: none; 
             transition: all 0.3s ease;
         }
 
-        /* Kesan Hover pada Gambar */
+        /* Hover Effect on Images */
         .slideshow-container img:hover {
             transform: scale(1.05); 
             opacity: 0.9;
             box-shadow: 0 0 0 5px rgba(244, 67, 54, 0.4);
         }
         
-        /* Butang Sebelumnya & Seterusnya (Lebih Kontras & Bulat) */
+        /* Previous and Next Buttons (More Contrast & Round) */
         .prev, .next {
             cursor: pointer;
             position: absolute;
@@ -1392,7 +1277,7 @@ section {
             font-weight: bold;
             font-size: 18px; 
             transition: 0.3s ease;
-            border-radius: 50%; /* Jadikan butang bulat */
+            border-radius: 50%;
             user-select: none;
             background-color: rgba(0, 0, 0, 0.5); 
             z-index: 20; 
@@ -1405,13 +1290,13 @@ section {
             left: 10px; 
         }
 
-        /* Tukar warna apabila hover (Merah UiTM) */
+        /* Change color when hovering (UiTM Red) */
         .prev:hover, .next:hover {
             background-color: #f44336; 
             color: white; 
         }
 
-        /* Titik-titik penunjuk slaid (dots) */
+        /* Slide indicator points (dots) */
         .dot {
             cursor: pointer;
             height: 12px; 
@@ -1423,44 +1308,43 @@ section {
             transition: background-color 0.6s ease;
         }
 
-        /* Gaya apabila dot aktif (Merah UiTM) */
+        /* Style when dot is active (UiTM Red) */
         .active, .dot:hover {
             background-color: #f44336;
             box-shadow: 0 0 3px 2px rgba(244, 67, 54, 0.5); 
         }
 
-        /* Kontena Dot */
+        /* Dot Container */
         .dot-container {
             text-align: center;
             padding: 10px;
             margin-bottom: 5px;
         }
 
-                /* CSS KHAS UNTUK NAVIGATION BAR SEBARIS/HORIZONTAL SCROLL */
+                /* SPECIAL CSS FOR INLINE NAVIGATION BAR/HORIZONTAL SCROLL */
         .navigation-grid-inline {
-            display: flex; /* Guna Flexbox untuk sebaris */
-            overflow-x: auto; /* Benarkan scroll mendatar pada skrin kecil */
-            white-space: nowrap; /* Penting: Pastikan semua item kekal sebaris */
-            padding-bottom: 10px; /* Ruang untuk scrollbar */
+            display: flex; 
+            overflow-x: auto; 
+            white-space: nowrap; 
+            padding-bottom: 10px; 
             margin-bottom: 20px;
         }
 
         .navigation-grid-inline .nav-card {
-            flex: 0 0 auto; /* Penting: Kekalkan lebar asal dan jangan membesar */
-            width: 200px; /* Tetapkan lebar kad untuk konsistensi */
+            flex: 0 0 auto; 
+            width: 200px; 
             margin-right: 10px;
             text-align: center;
             padding: 10px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.16), 0 2px 10px rgba(0,0,0,0.12);
-            /* TAMBAHAN BARU: Peralihan (transition) dan keadaan permulaan untuk zoom */
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
             transform: scale(1); 
         }
 
-        /* KESAN BARU: ZOOM OUT (Mengecil sedikit) apabila HOVER */
+        /* NEW EFFECT: ZOOM OUT on HOVER */
         .navigation-grid-inline .nav-card:hover {
-            transform: scale(0.95); /* Mengecilkan kad sebanyak 5% */
-            box-shadow: 0 4px 8px rgba(0,0,0,0.20), 0 6px 20px rgba(0,0,0,0.15); /* Tambah kesan bayangan */
+            transform: scale(0.95); 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.20), 0 6px 20px rgba(0,0,0,0.15); 
         }
         
         .navigation-grid-inline .nav-card h3 {
@@ -1472,34 +1356,30 @@ section {
             margin: 5px 0 0;
             font-size: 12px;
         }
-        /* AKHIR CSS NAVIGATION BAR SEBARIS/HORIZONTAL SCROLL */
+        /* END OF CSS NAVIGATION BAR INLINE/HORIZONTAL SCROLL */
 
-        /* CSS KHAS UNTUK FOOTER QUICK LINKS */
+        /* SPECIAL CSS FOR FOOTER QUICK LINKS */
         .footer-quick-links {
             padding: 10px 0;
             margin-top: 10px;
-            border-top: 1px solid #ccc; /* Pemisah visual */
+            border-top: 1px solid #ccc; 
             text-align: center;
         }
         .footer-quick-links a {
             margin: 0 10px;
             text-decoration: none;
-            color: inherit; /* Menggunakan warna teks footer */
+            color: inherit; 
             font-weight: bold;
             transition: color 0.2s;
         }
         .footer-quick-links a:hover {
-            color: #4CAF50; /* Warna hover hijau (contoh) */
+            color: #4CAF50; 
             text-decoration: underline;
         }
-        /* AKHIR CSS FOOTER QUICK LINKS */
+        /* END CSS FOOTER QUICK LINKS */
 
-        /* Fail: style_custom.css (TAMBAHAN BAHARU) */
 
-/* * -----------------------------------------------------------
- * GAYA DARI BIODATA.HTML (SKILLS BAR)
- * -----------------------------------------------------------
- */
+/* --- STYLE FROM BIODATA.HTML (SKILLS BAR) --- */
 .skills-container {
     padding: 20px;
 }
@@ -1508,20 +1388,15 @@ section {
     padding-top: 5px; 
     padding-bottom: 5px; 
     color: white; 
-    transition: width 0.8s ease-in-out; /* Untuk animasi bar */
+    transition: width 0.8s ease-in-out;
 }
 
-/* * -----------------------------------------------------------
- * GAYA DARI EXPERIENCE.HTML & EDUCATION.HTML (TIMELINE)
- * -----------------------------------------------------------
- */
 .timeline-section {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Garisan Utama (Vertikal) */
 .timeline-section::after {
     content: '';
     position: absolute;
@@ -1541,7 +1416,6 @@ section {
     width: 50%;
 }
 
-/* Titik Bulat (Marker) pada Garisan */
 .timeline-card::after {
     content: '';
     position: absolute;
@@ -1555,22 +1429,18 @@ section {
     z-index: 2;
 }
 
-/* Kontena sebelah kiri */
 .left-card {
     left: 0;
 }
 
-/* Kontena sebelah kanan */
 .right-card {
     left: 50%;
 }
 
-/* Titik Bulat Kanan (Align ke Kiri) */
 .right-card::after {
     left: -16px;
 }
 
-/* Anak Panah Kiri */
 .left-card::before {
     content: " ";
     height: 0;
@@ -1584,7 +1454,6 @@ section {
     border-color: transparent transparent transparent white;
 }
 
-/* Anak Panah Kanan */
 .right-card::before {
     content: " ";
     height: 0;
@@ -1598,48 +1467,36 @@ section {
     border-color: transparent white transparent transparent;
 }
 
-/* Media Queries untuk Skrin Kecil */
 @media screen and (max-width: 600px) {
-    /* Garisan Vertikal Utama ke Kiri */
     .timeline-section::after {
         left: 31px;
     }
     
-    /* Semua kad di sebelah kiri */
     .timeline-card {
         width: 100%;
         padding-left: 70px;
         padding-right: 25px;
     }
     
-    /* Semua kad diletakkan di Kiri */
     .right-card {
         left: 0%;
     }
     
-    /* Anak Panah Kiri dan Kanan sama */
     .left-card::before, .right-card::before {
         border: medium solid white;
         border-width: 10px 10px 10px 0;
         border-color: transparent white transparent transparent;
         left: 60px;
     }
-
-    /* Titik Bulat Kiri dan Kanan sama */
     .left-card::after, .right-card::after {
         left: 15px;
     }
 }
 
-
-/* * -----------------------------------------------------------
- * GAYA DARI FAMILY.HTML (FAMILY CARDS)
- * -----------------------------------------------------------
- */
 .family-member-card {
     text-align: center;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
-    height: 100%; /* Memastikan ketinggian kad sama dalam grid */
+    height: 100%; 
 }
 .family-member-card:hover {
     transform: translateY(-5px);
@@ -1658,17 +1515,10 @@ section {
     margin-bottom: 5px;
 }
 
-
-/* * -----------------------------------------------------------
- * GAYA DARI GALLERY.HTML (GALLERY GRID)
- * -----------------------------------------------------------
- */
-/* Gaya Grid Galeri Utama */
 .gallery-grid {
     display: grid;
-    /* >>> PERUBAHAN KRITIKAL: Tetapkan kepada 4 kolom sebaris (4 atas, 4 bawah) <<< */
     grid-template-columns: repeat(4, 1fr); 
-    gap: 20px; /* Jarak antara item */
+    gap: 20px; 
     padding: 20px 0; 
 }
 .gallery-item {
@@ -1684,7 +1534,7 @@ section {
 }
 .gallery-item img, .gallery-item iframe {
     width: 100%;
-    height: 250px; /* Saiz standard untuk galeri */
+    height: 250px; 
     object-fit: cover;
     display: block;
 }
@@ -1695,58 +1545,41 @@ section {
     border-top: 1px solid #eee;
 }
 
-/* * -----------------------------------------------------------
- * MEDIA QUERIES UNTUK GALERI (Grid Responsif)
- * -----------------------------------------------------------
- */
-
-/* Untuk Skrin Tablet (50% - 2 sebaris) */
 @media (max-width: 992px) {
     .gallery-grid {
-        /* Tukar kepada 2 gambar sebaris pada skrin lebih kecil */
         grid-template-columns: repeat(2, 1fr); 
     }
 }
 
-/* Untuk Skrin Telefon Bimbit (100% - 1 sebaris) */
 @media (max-width: 600px) {
     .gallery-grid {
-        /* Tukar kepada 1 gambar sebaris pada skrin telefon */
+
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
-/* ================================================= */
-/* === PEMBETULAN KRITIKAL MODAL/POPUP (Centering & Z-index) === */
-/* PASTIKAN KOD INI DILETAK DI AKHIR style_custom.css ANDA */
-/* ================================================= */
-
 #imageModal { 
-    /* Mengatasi W3.CSS: Sembunyi secara default */
+
     display: none; 
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    z-index: 10000 !important; /* KRITIKAL: Memaksa lapisan di atas segalanya */
+    z-index: 10000 !important; 
     overflow: auto; 
     background-color: rgba(0,0,0,0.9);
     
-    /* Centering menggunakan Flexbox */
     align-items: center; 
     justify-content: center; 
     padding: 10px; 
-    cursor: pointer; /* Membolehkan klik di luar gambar untuk tutup */
+    cursor: pointer; 
 }
 
-/* KRITIKAL: Menukar dari display: none kepada display: flex apabila kelas w3-show ditambah */
-/* Flex diperlukan untuk centering menegak dan mendatar */
 #imageModal.w3-show {
     display: flex !important;
 }
 
-/* Mengemas kini gaya W3.CSS modal content untuk centering */
 #imageModal .w3-modal-content {
     max-width: 95%; 
     max-height: 95vh;
@@ -1765,11 +1598,6 @@ section {
     cursor: default; 
 }
 
-
-/* * -----------------------------------------------------------
- * GAYA TIMELINE SATU LAJUR BARU (PENGGANTIAN UNTUK DUA LAJUR)
- * -----------------------------------------------------------
- */
 .timeline-section {
     position: relative;
     max-width: 900px; 
@@ -1777,15 +1605,14 @@ section {
     padding: 20px 0;
 }
 
-/* Garisan Utama (Vertikal) */
 .timeline-section::after {
     content: '';
     position: absolute;
     width: 4px; 
-    background-color: var(--w3-theme); /* Menggunakan warna tema anda */
+    background-color: var(--w3-theme); 
     top: 0;
     bottom: 0;
-    left: 30px; /* Pindahkan garisan ke kiri (30px dari tepi kontena) */
+    left: 30px; 
     margin-left: -2px;
     z-index: 1;
 }
@@ -1794,21 +1621,20 @@ section {
     padding: 10px 10px 10px 40px; 
     position: relative;
     background-color: inherit;
-    width: 100%; /* Semua kad ambil lebar penuh */
+    width: 100%; 
     margin-bottom: 25px; 
     transition: all 0.3s ease;
     z-index: 10; 
-    left: 0 !important; /* Kekalkan di sebelah kiri */
+    left: 0 !important; 
 }
 
-/* Titik Bulat (Marker) pada Garisan */
 .timeline-card::after {
     content: '';
     position: absolute;
     width: 18px; 
     height: 18px;
     right: auto; 
-    left: 20px; /* Kedudukan di atas garisan (Tepi kiri kad) */
+    left: 20px; 
     background-color: white; 
     border: 3px solid var(--w3-theme-dark);
     top: 15px;
@@ -1816,7 +1642,6 @@ section {
     z-index: 20;
 }
 
-/* Anak Panah */
 .timeline-card::before {
     content: " ";
     height: 0;
@@ -1824,56 +1649,41 @@ section {
     top: 20px;
     width: 0;
     z-index: 10;
-    left: 48px; /* Diletakkan sedikit ke kanan marker */
+    left: 48px; 
     border: medium solid transparent;
     border-width: 8px 8px 8px 0;
-    border-color: transparent white transparent transparent; /* Anak panah menunjuk ke kiri */
+    border-color: transparent white transparent transparent; 
 }
 
-
-/* * --------------------------------
- * Media Queries - Responsif
- * --------------------------------
- * Untuk gaya satu lajur, penyesuaian sangat minimal.
- */
 @media screen and (max-width: 600px) {
-    /* Hanya pastikan garisan sentiasa dekat tepi */
     .timeline-section::after {
         left: 20px; 
     }
     
-    /* Semua kad di sebelah kanan garisan */
     .timeline-card {
         padding-left: 50px; 
     }
     
-    /* Titik Bulat (Marker) */
     .timeline-card::after {
         left: 10px;
     }
     
-    /* Anak Panah */
     .timeline-card::before {
         left: 36px;
     }
 }
 
-/* ======================================================= */
-/* KHAS UNTUK experience.html                             */
-/* ======================================================= */
-
-/* CSS KHAS UNTUK NAVIGATION BAR SEBARIS/HORIZONTAL SCROLL */
 .navigation-grid-inline {
-    display: flex; /* Guna Flexbox untuk sebaris */
-    overflow-x: auto; /* Benarkan scroll mendatar pada skrin kecil */
-    white-space: nowrap; /* Penting: Pastikan semua item kekal sebaris */
-    padding-bottom: 10px; /* Ruang untuk scrollbar */
+    display: flex;
+    overflow-x: auto; 
+    white-space: nowrap; 
+    padding-bottom: 10px; 
     margin-bottom: 20px;
 }
 
 .navigation-grid-inline .nav-card {
-    flex: 0 0 auto; /* Penting: Kekalkan lebar asal dan jangan membesar */
-    width: 200px; /* Tetapkan lebar kad untuk konsistensi */
+    flex: 0 0 auto; 
+    width: 200px; 
     margin-right: 10px;
     text-align: center;
     padding: 10px;
@@ -1883,8 +1693,8 @@ section {
 }
 
 .navigation-grid-inline .nav-card:hover {
-    transform: scale(0.95); /* Mengecilkan kad sebanyak 5% */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.20), 0 6px 20px rgba(0,0,0,0.15); /* Tambah kesan bayangan */
+    transform: scale(0.95); 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.20), 0 6px 20px rgba(0,0,0,0.15); 
 }
 
 .navigation-grid-inline .nav-card h3 {
@@ -1897,54 +1707,49 @@ section {
     font-size: 12px;
 }
 
-/* CSS BARU UNTUK 3X3 GRID FLEXBOX (#responsibility-grid) */
 #responsibility-grid {
     display: flex;
-    flex-wrap: wrap; /* Benarkan kotak ke barisan seterusnya */
-    margin-left: -8px; /* Offset padding */
-    margin-right: -8px; /* Offset padding */
+    flex-wrap: wrap; 
+    margin-left: -8px; 
+    margin-right: -8px; 
 }
 
 .responsibility-item {
-    /* Pastikan ia mengambil 1/3 lebar tolak padding */
     width: calc(33.333% - 16px); 
-    padding: 0 8px; /* Padding di kiri kanan */
+    padding: 0 8px; 
     margin-bottom: 15px;
-    box-sizing: border-box; /* Pastikan padding dikira dalam lebar */
+    box-sizing: border-box; 
 }
 
-/* Pastikan kotak item itu sendiri mempunyai ketinggian yang sama (Flex dalaman) */
+
 .responsibility-item .detail-item {
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 .responsibility-item p {
-    flex-grow: 1; /* Biarkan perenggan mengisi ruang */
+    flex-grow: 1; 
     font-weight: normal; 
     font-size: 14px;
 }
-/* Jika skrin terlalu kecil */
+
 @media (max-width: 600px) {
-    /* Kekalkan 33.33% untuk memaksa 3 sebaris (seperti yang diminta) */
     .responsibility-item {
         width: calc(33.333% - 16px);
     }
 }
 
-
-/* CSS KUSTOM UNTUK MEDIA GALLERY - Memastikan ketinggian yang konsisten */
 .media-item-box {
     height: 250px; 
     overflow: hidden;
 }
-/* Semua gambar dan video di dalam kotak ini akan memenuhi ruang 250px */
+
 .media-item-box img, .media-item-box video {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-/* Memastikan kontena video juga mengikut ketinggian yang sama */
+
 .video-fixed-height-container {
     position: relative;
     width: 100%;
@@ -1952,8 +1757,6 @@ section {
     overflow: hidden;
 }
 
-
-/* GAYA MODAL IMEJ (Dipindahkan dari experience.html dan inline style) */
 #imageModal {
     position: fixed !important; 
     z-index: 9999 !important;
@@ -1976,7 +1779,6 @@ section {
     cursor: default;
 }
 
-/* Gaya untuk butang tutup modal (Menggantikan inline style) */
 #imageModal .w3-button {
     z-index: 10001; 
     position: fixed; 
@@ -1989,29 +1791,24 @@ section {
     cursor: pointer;
 }
 
-/* CSS KHAS UNTUK FOOTER QUICK LINKS */
 .footer-quick-links {
     padding: 10px 0;
     margin-top: 10px;
-    border-top: 1px solid #ccc; /* Pemisah visual */
+    border-top: 1px solid #ccc; 
     text-align: center;
 }
 .footer-quick-links a {
     margin: 0 10px;
     text-decoration: none;
-    color: inherit; /* Menggunakan warna teks footer */
+    color: inherit; 
     font-weight: bold;
     transition: color 0.2s;
 }
 .footer-quick-links a:hover {
-    color: #4CAF50; /* Warna hover hijau (contoh) */
+    color: #4CAF50; 
     text-decoration: underline;
 }
 
-/* * -----------------------------------------------------------
- * GAYA DARI FAMILY.HTML (FAMILY GRID & CARD)
- * -----------------------------------------------------------
- */
 #family-grid {
     display: flex;
     flex-wrap: wrap; 
@@ -2019,9 +1816,8 @@ section {
     padding: 20px 0;
 }
 .family-member-card {
-    /* Guna w3-col m3 s12 dan w3-margin-bottom dalam HTML dan ini untuk melengkapkan */
-    flex: 0 0 calc(25% - 20px); /* 4 kad sebaris pada desktop */
-    margin: 10px; /* Ruang antara kad */
+    flex: 0 0 calc(25% - 20px); 
+    margin: 10px; 
     text-align: center;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
     height: 100%; 
@@ -2043,10 +1839,9 @@ section {
     margin-bottom: 5px;
 }
 
-/* Media query untuk skrin kecil (supaya kad berpusat) */
 @media (max-width: 800px) {
     .family-member-card {
-        flex: 0 0 calc(50% - 20px); /* 2 kad sebaris pada tablet */
+        flex: 0 0 calc(50% - 20px); 
     }
 }
 @media (max-width: 600px) {
@@ -2055,16 +1850,10 @@ section {
         align-items: center;
     }
     .family-member-card {
-        flex: 0 0 90%; /* 1 kad sebaris pada telefon */
+        flex: 0 0 90%;
     }
 }
 
-/* * -----------------------------------------------------------
- * GAYA BARU (FINAL): FAMILY ALBUM HOVER EFFECT (Slide-In 20% Bottom & Zoom)
- * -----------------------------------------------------------
- */
-
-/* 1. Grid Layout for Family Album */
 .family-album-grid {
     display: flex;
     flex-wrap: wrap; 
@@ -2083,7 +1872,6 @@ section {
     border-radius: 4px;
 }
 
-/* Media Query (Responsif) - Kekalkan seperti sedia ada */
 @media (max-width: 800px) {
     .album-item {
         flex: 0 0 calc(50% - 16px); 
@@ -2095,7 +1883,6 @@ section {
     }
 }
 
-/* 2. Gaya Imej (.album-photo) - Kekalkan kesan zoom */
 .album-photo {
     width: 100%;
     height: 100%;
@@ -2104,13 +1891,11 @@ section {
     display: block; 
 }
 
-/* 3. Gaya Kapsyen Overlay (.caption-album) */
 .caption-album {
     position: absolute;
     left: 0;
     width: 100%;
     
-    /* PERUBAHAN KRITIKAL 1: Tetapkan ketinggian kepada 20% */
     height: 20%; 
     
     background-color: rgba(0, 0, 0, 0.75); 
@@ -2119,49 +1904,33 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 5px; /* Kurangkan padding agar muat 20% */
-    font-size: 14px; /* Kurangkan saiz fon */
+    padding: 5px; 
+    font-size: 14px; 
     font-weight: bold;
     
-    /* Mula-mula, letakkan kapsyen di bawah kontena (di luar pandangan) */
     top: 100%; 
     
     transition: top 0.4s ease-out, opacity 0.4s ease-out; 
-    opacity: 1; /* Kekalkan opacity 1 (supaya tidak berkedip ketika slide) */
+    opacity: 1; 
 }
 
-
-/* 4. KESAN HOVER: Apabila kursor berada di atas kontena (.album-item) */
-
-/* (a) Kesan Zoom pada Gambar */
 .album-item:hover .album-photo {
     transform: scale(1.1); 
 }
 
-/* (b) Kesan Slide-In pada Kapsyen */
 .album-item:hover .caption-album {
-    /* PERUBAHAN KRITIKAL 2: Alihkan kapsyen ke 80% dari atas. 
-       (100% - 20% ketinggian = 80%) */
+    
     top: 80%; 
 }
 
-/* * -----------------------------------------------------------
- * GAYA DIPINDAHKAN DARI GALLERY.HTML (GLOBAL)
- * -----------------------------------------------------------
- */
-
-/* ================================================= */
-/* === 1. CSS KHAS UNTUK NAVIGATION BAR SEBARIS (Horizontal Scroll) === */
-/* ================================================= */
 .navigation-grid-inline {
-    display: flex; /* Guna Flexbox untuk sebaris */
-    overflow-x: auto; /* Benarkan scroll mendatar pada skrin kecil */
-    white-space: nowrap; /* Penting: Pastikan semua item kekal sebaris */
-    padding-bottom: 10px; /* Ruang untuk scrollbar */
+    display: flex; 
+    overflow-x: auto; 
+    white-space: nowrap; 
+    padding-bottom: 10px; 
     margin-bottom: 20px;
 }
 
-/* Nota: .nav-card akan menggunakan gaya global, hanya perlukan penyesuaian untuk layout inline */
 .navigation-grid-inline .nav-card {
     flex: 0 0 auto;
     width: 200px;
@@ -2191,9 +1960,6 @@ section {
     color: #666;
 }
 
-/* ================================================= */
-/* === 2. CSS KHAS UNTUK FOOTER QUICK LINKS (Global) === */
-/* ================================================= */
 .footer-quick-links {
     padding: 10px 0;
     margin-top: 10px;
@@ -2212,13 +1978,9 @@ section {
     transition: color 0.2s;
 }
 .footer-quick-links a:hover {
-    color: var(--color-secondary); /* Menggunakan warna aksen global */
+    color: var(--color-secondary); 
     text-decoration: underline;
 }
-
-/* =================================================== */
-/* GAYA SPORTS SECTION (SAMA MACAM FAMILY CARDS)       */
-/* =================================================== */
 
 #sports-section .w3-row-padding {
     display: flex;
@@ -2228,14 +1990,12 @@ section {
 }
 
 #sports-section .w3-third {
-    /* Gunakan 30% supaya jadi 3 sebaris (langsing macam family card) */
     flex: 0 0 calc(30% - 20px) !important;
     margin: 10px;
     display: flex;
     float: none !important;
 }
 
-/* 1. Gaya Kotak (Ikut gaya .family-member-card) */
 #sports-section .w3-card-4 {
     text-align: center;
     padding: 30px; 
@@ -2249,13 +2009,11 @@ section {
     align-items: center;
 }
 
-/* KESAN HOVER KOTAK: Pop-out ke atas (Sama macam Family) */
 #sports-section .w3-card-4:hover {
     transform: translateY(-12px) !important; 
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3) !important; 
 }
 
-/* 2. Gaya Gambar (Ikut gaya .family-member-card img) */
 #sports-section .sport-img {
     width: 180px !important; 
     height: 180px !important;
@@ -2267,38 +2025,29 @@ section {
     transition: transform 0.3s ease-in-out !important; 
 }
 
-/* KESAN HOVER GAMBAR: Zoom In/Pop-out (Sama macam Family) */
 #sports-section .w3-card-4:hover .sport-img {
-    transform: scale(1.15) !important; /* Gambar membesar 15% keluar dari frame asal */
+    transform: scale(1.15) !important;
 }
 
-/* Responsif untuk Telefon */
+
 @media (max-width: 768px) {
     #sports-section .w3-third {
         flex: 0 0 calc(100% - 20px) !important; 
     }
 }
 
-/* ======================================================= */
-/* KHAS UNTUK BIODATA.HTML (Gaya Kecil & Kompak)           */
-/* ======================================================= */
-
-/* --- PEMBETULAN SAIZ BIODATA (Besarkan Sedikit) --- */
-
 .biodata-movie-grid {
     display: flex !important;
     flex-wrap: wrap !important;
     justify-content: center !important;
-    gap: 20px !important; /* Jarak antara kotak */
+    gap: 20px !important; 
     padding: 20px 0;
 }
 
 .biodata-movie-card {
-    /* Kita naikkan daripada 22% ke 28% supaya kotak lebih lebar sedikit */
     flex: 0 0 28% !important; 
     width: 28% !important;
     
-    /* Naikkan had lebar maksimum dan minimum */
     min-width: 220px !important; 
     max-width: 300px !important; 
     
@@ -2314,7 +2063,6 @@ section {
     box-sizing: border-box !important;
 }
 
-/* Sesuaikan tinggi video supaya tak nampak penyek */
 .biodata-movie-card video {
     width: 100% !important;
     height: 170px !important; 
@@ -2322,25 +2070,24 @@ section {
     border-radius: 8px;
 }
 
-/* --- KEMASKINI SOCIAL MEDIA: 4 COLUMN (LEBIH KECIL & KEMAS) --- */
+/* --- SOCIAL MEDIA UPDATE: 4 COLUMNS (SMALLER and NEAT) --- */
 
 .social-media-grid {
     display: flex !important;
     flex-wrap: wrap !important;
     justify-content: center !important;
-    gap: 12px !important; /* Rapatkan sedikit jarak antara kad */
+    gap: 12px !important; 
     padding: 15px 0;
 }
 
 .social-card {
-    /* Kita kecilkan sedikit lebar kepada 21% supaya ada lebih ruang kosong */
     flex: 0 0 21% !important; 
     width: 21% !important;
-    min-width: 160px !important; /* Saiz minimum lebih kecil */
-    max-width: 220px !important; /* Hadkan supaya tak terlalu lebar pada skrin besar */
+    min-width: 160px !important; 
+    max-width: 220px !important; 
     
     background: #fff;
-    padding: 20px 10px; /* Kurangkan padding atas/bawah */
+    padding: 20px 10px; 
     margin: 5px;
     border-radius: 12px;
     text-align: center;
@@ -2351,7 +2098,6 @@ section {
     box-sizing: border-box !important;
 }
 
-/* Kecilkan saiz ikon sikit supaya seimbang dengan kotak kecil */
 .social-card .social-icon {
     font-size: 50px !important; 
     margin-bottom: 10px;
@@ -2366,11 +2112,7 @@ section {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
-/* ======================================================= */
-/* KHAS UNTUK GALLERY.HTML (Gaya Besar & Menonjol)         */
-/* ======================================================= */
 
-/* Container utama di Gallery */
 .gallery-video-grid {
     display: flex !important;
     flex-wrap: wrap !important;
@@ -2379,9 +2121,8 @@ section {
     padding: 30px 0;
 }
 
-/* Kotak Video di Gallery (Saiz lebih besar) */
 .gallery-video-card {
-    flex: 0 0 45% !important; /* 2 sebaris sahaja supaya puas tengok */
+    flex: 0 0 45% !important; 
     width: 45% !important;
     min-width: 300px !important;
     max-width: 500px !important;
@@ -2394,11 +2135,10 @@ section {
 
 .gallery-video-card video {
     width: 100% !important;
-    height: auto !important; /* Biar saiz video asal nampak cantik */
+    height: auto !important; 
     border-radius: 10px;
 }
 
-/* Susunan untuk telefon pintar (1 video satu baris) */
 @media (max-width: 768px) {
     .video-grid-custom .movie-card {
         flex: 0 0 100% !important;
@@ -2406,7 +2146,6 @@ section {
     }
 }
 
-/* --- GAYA KHAS UNTUK BANGUNAN INTERNSHIP --- */
 .office-building-container {
     text-align: center;
     margin: 20px 0;
@@ -2419,16 +2158,15 @@ section {
 
 .building-img {
     width: 100%;
-    max-width: 650px; /* Saiz optimum untuk desktop */
+    max-width: 650px; 
     height: auto;
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0,0,0,0.15);
     transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     cursor: pointer;
-    border: 5px solid white; /* Frame putih ala polaroid */
+    border: 5px solid white; 
 }
 
-/* Kesan zoom bila tetikus lalu (Hover) */
 .building-img:hover {
     transform: scale(1.03);
 }
@@ -2436,7 +2174,7 @@ section {
 .location-tag {
     display: inline-block;
     margin-top: 15px;
-    background: var(--color-primary); /* Menggunakan warna tema anda */
+    background: var(--color-primary); 
     color: white;
     padding: 8px 20px;
     border-radius: 25px;
@@ -2445,7 +2183,6 @@ section {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-/* Responsif untuk skrin kecil (Phone) */
 @media (max-width: 600px) {
     .office-building-container {
         padding: 10px;
@@ -2456,7 +2193,7 @@ section {
     }
 }
 
-/* --- GAYA KHAS UNTUK GAMBAR BANGUNAN INTERNSHIP --- */
+/* --- SPECIAL STYLE FOR INTERNSHIP BUILDING PHOTOGRAPHY --- */
 .office-building-container {
     text-align: center;
     margin: 20px 0;
@@ -2469,17 +2206,17 @@ section {
 
 .building-img {
     width: 100%;
-    max-width: 600px; /* Saiz maksimum supaya tidak terlalu besar di desktop */
+    max-width: 600px; 
     height: auto;
     border-radius: 8px;
-    border: 5px solid white; /* Memberi kesan bingkai */
+    border: 5px solid white; 
     box-shadow: 0 6px 12px rgba(0,0,0,0.15);
     transition: transform 0.4s ease;
     cursor: pointer;
 }
 
 .building-img:hover {
-    transform: scale(1.02); /* Kesan zoom halus bila mouse lalu */
+    transform: scale(1.02); 
 }
 
 .building-caption {
@@ -2489,10 +2226,9 @@ section {
     font-size: 0.9em;
 }
 
-/* Pastikan Maps Responsive */
 .map-responsive {
     overflow: hidden;
-    padding-bottom: 56.25%; /* Ratio 16:9 */
+    padding-bottom: 56.25%; 
     position: relative;
     height: 0;
 }
@@ -2505,7 +2241,6 @@ section {
     position: absolute;
 }
 
-/* Untuk desktop, kita kekalkan height 300px seperti dalam HTML */
 @media (min-width: 992px) {
     .map-responsive {
         padding-bottom: 0;
@@ -2513,17 +2248,15 @@ section {
     }
 }
 
-/* --- PEMBETULAN KHAS UNTUK VIDEO: 2 ATAS, 2 BAWAH & CENTER --- */
 .movie-grid {
     display: flex !important;
     flex-wrap: wrap !important;
-    justify-content: center !important; /* Centerkan baris */
+    justify-content: center !important; 
     gap: 30px !important;
     padding: 20px 0;
 }
 
 .movie-card {
-    /* flex-basis 45% memastikan hanya 2 kotak muat sebelah menyebelah */
     flex: 0 0 45% !important; 
     min-width: 300px !important;
     max-width: 480px !important;
@@ -2531,7 +2264,7 @@ section {
     text-align: center;
 }
 
-/* Jika skrin kecil (Phone), jadikan 1 video satu baris */
+
 @media (max-width: 768px) {
     .movie-card {
         flex: 0 0 100% !important;
@@ -2540,26 +2273,26 @@ section {
 
 /* --- FORCE CENTER: INTERNSHIP RELATED MEDIA (V2.0) --- */
 
-/* 1. Paksa container media jadi Flexbox dan letak di tengah */
+/* 1. Force the media container to be a Flexbox and place it in the middle */
 #work-experience .w3-row-padding {
     display: flex !important;
     flex-wrap: wrap !important;
-    justify-content: center !important; /* Paksa item ke tengah secara melintang */
-    align-items: center !important;     /* Paksa item ke tengah secara menegak */
+    justify-content: center !important; 
+    align-items: center !important;     
     margin: 0 auto !important;
     float: none !important;
 }
 
-/* 2. Reset kolum (m3 s6) supaya tidak melekat di kiri */
+/* 2. Reset column (m3 s6) so it doesn't stick to the left */
 #work-experience .w3-col.m3.s6 {
-    float: none !important;      /* Matikan fungsi float left asal */
+    float: none !important;      
     display: inline-block !important; 
-    margin: 10px 5px !important; /* Tambah sedikit jarak antara kotak */
-    width: 22% !important;       /* Kekalkan saiz 4 kotak sebaris untuk desktop */
-    min-width: 150px !important; /* Supaya tak terlalu kecil pada phone */
+    margin: 10px 5px !important; 
+    width: 22% !important;       
+    min-width: 150px !important; 
 }
 
-/* 3. Pastikan tajuk 'Internship Related Media' juga center */
+/* 3. Make sure the title 'Internship Related Media' is also centered */
 #work-experience h4.w3-text-primary {
     text-align: center !important;
     width: 100% !important;
@@ -2567,33 +2300,33 @@ section {
     margin-top: 30px !important;
 }
 
-/* 4. Center-kan video dan gambar di dalam kotak */
+/* 4. Center videos and images in the box */
 .media-item-box {
     margin: 0 auto !important;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
     overflow: hidden;
-    border: 2px solid #000000 !important; /* Pastikan border hitam ikut tema awak */
+    border: 2px solid #000000 !important; 
 }
 
-/* 5. Baiki video supaya tak lari saiz */
+/* 5. Fix the video so that it doesn't run out of size */
 .video-fixed-height-container video {
     display: block !important;
     margin: 0 auto !important;
 }
 
-/* --- PERFECT SEBARIS: INTERNSHIP MEDIA --- */
+/* --- PERFECT IN LINE: MEDIA INTERNSHIP --- */
 
-/* 1. Paksa container guna Flexbox supaya anak-anaknya sama tinggi secara automatik */
+/* 1. Force the container to use Flexbox so that its children are automatically the same height*/
 #work-experience .w3-row-padding {
     display: flex !important;
     flex-wrap: wrap !important;
-    align-items: stretch !important; /* Rahsia untuk paksa kotak kiri & kanan sama tinggi */
+    align-items: stretch !important; 
     justify-content: center !important;
 }
 
-/* 2. Reset kolum W3.CSS supaya tak lari ke kiri */
+/* 2. Reset the W3.CSS column so it doesn't run to the left */
 #work-experience .w3-half {
     float: none !important; 
     display: flex !important;
@@ -2601,30 +2334,30 @@ section {
     margin-bottom: 20px !important;
 }
 
-/* 3. Selaraskan GAMBAR - Paksa tinggi 350px */
+/* 3. Align IMAGE - Force height 350px */
 .building-img {
     width: 100% !important;
-    height: 350px !important; /* TINGGI WAJIB SAMA DENGAN MAP */
-    object-fit: cover !important; /* Supaya gambar tak penyek walaupun dipaksa tinggi */
+    height: 350px !important;
+    object-fit: cover !important; 
     border-radius: 10px !important;
     display: block !important;
     margin: 0 !important;
 }
 
-/* 4. Selaraskan MAP - Paksa tinggi 350px */
+/* 4. Align MAP - Force height 350px */
 .map-container {
-    height: 350px !important; /* TINGGI WAJIB SAMA DENGAN GAMBAR */
+    height: 350px !important; 
     width: 100% !important;
     border-radius: 10px !important;
     overflow: hidden !important;
     display: flex !important;
 }
 
-/* 5. Baiki iframe peta di dalam container */
+/* 5. Fix the map iframe in the container */
 .map-responsive {
     height: 100% !important;
     width: 100% !important;
-    padding-bottom: 0 !important; /* Buang ratio lama yang ganggu kedudukan */
+    padding-bottom: 0 !important; 
     position: relative !important;
 }
 
@@ -2635,65 +2368,63 @@ section {
     border: 0 !important;
 }
 
-/* --- ANIMASI SLIDE-IN-BLURRED UNTUK KEY RESPONSIBILITIES --- */
+/* --- SLIDE-IN-BLURRED ANIMATION FOR KEY RESPONSIBILITIES --- */
 
-/* 1. Definisi Gerakan Slide + Blur */
+/* 1. Motion Definition Slide + Blur */
 @keyframes slide-blur-in {
     0% {
-        transform: translateX(-100px); /* Masuk dari kiri */
-        filter: blur(20px);            /* Sangat kabur */
-        opacity: 0;                    /* Halimunan */
+        transform: translateX(-100px); 
+        filter: blur(20px);            
+        opacity: 0;                    
     }
     100% {
-        transform: translateX(0);      /* Kedudukan asal */
-        filter: blur(0);               /* Tajam balik */
-        opacity: 1;                    /* Nampak penuh */
+        transform: translateX(0);     
+        filter: blur(0);              
+        opacity: 1;                    
     }
 }
 
-/* 2. Guna pada tajuk Key Responsibilities */
-/* Saya sasarkan h4 di dalam section work-experience */
+/* 2. Use the Key Responsibilities title */
+
 #work-experience h4 {
     display: block;
     animation: slide-blur-in 1.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-    text-align: center; /* Memasangkan sekali permintaan awak tadi untuk center-kan */
+    text-align: center; 
 }
 
-/* Jika awak nak senarai di bawahnya pun ikut slide-in sekali */
 #work-experience .w3-ul {
     animation: slide-blur-in 1.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-    animation-delay: 0.2s; /* Dia masuk lambat sikit selepas tajuk */
+    animation-delay: 0.2s; 
 }
 
-/* --- ANIMASI FOCUS-IN UNTUK PRIMARY EDUCATION --- */
+/* --- FOCUS-IN ANIMATION FOR PRIMARY EDUCATION --- */
 
-/* 1. Definisi Gerakan Focus-In */
+/* 1. Definition of Focus-In Movement */
 @keyframes focus-in-animation {
     0% {
-        letter-spacing: 0.5em; /* Huruf jarak-jarak */
-        filter: blur(12px);    /* Sangat kabur */
-        opacity: 0;            /* Halimunan */
+        letter-spacing: 0.5em; 
+        filter: blur(12px);    
+        opacity: 0;      
     }
     100% {
-        letter-spacing: normal; /* Balik ke asal */
-        filter: blur(0);        /* Tajam */
-        opacity: 1;             /* Nampak penuh */
+        letter-spacing: normal; 
+        filter: blur(0);     
+        opacity: 1;            
     }
 }
 
-/* 2. Guna pada tajuk Primary Education */
-/* Saya sasarkan h3 atau h4 yang mengandungi teks tersebut */
+/* 2. Apply to the title Primary Education */
 .education-section h3, 
 .primary-edu-title {
     display: block;
     animation: focus-in-animation 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    color: #000000 !important; /* Kekalkan tema hitam awak */
+    color: #000000 !important; 
     font-weight: bold;
 }
 
-/* --- ANIMASI JELLO UNTUK PRIMARY EDUCATION (RELIGIOUS) --- */
+/* --- JELLO ANIMATION FOR PRIMARY EDUCATION (RELIGIOUS) --- */
 
-/* 1. Definisi Gerakan Jello (Kenyal) */
+/* 1. Definition of Jello Motion (Chewy) */
 @keyframes jello-horizontal {
   0% { transform: scale3d(1, 1, 1); }
   30% { transform: scale3d(1.25, 0.75, 1); }
@@ -2704,18 +2435,17 @@ section {
   100% { transform: scale3d(1, 1, 1); }
 }
 
-/* 2. Guna pada tajuk Primary Education (Religious) */
-/* Kita buat dia aktif bila cursor lalu (hover) */
+/* 2. Use on the title Primary Education (Religious) */
 .religious-edu-title:hover {
-    display: inline-block; /* Wajib ada supaya transform berfungsi */
+    display: inline-block; 
     animation: jello-horizontal 0.9s both;
     cursor: pointer;
-    color: #000000 !important; /* Kekalkan warna tema awak */
+    color: #000000 !important; 
 }
 
-/* --- ANIMASI RAINBOW-BORDER UNTUK UNIVERSITY EDUCATION --- */
+/* --- RAINBOW-BORDER ANIMATION FOR UNIVERSITY EDUCATION --- */
 
-/* 1. Definisi Perubahan Warna Pelangi */
+/* 1. Definition of Rainbow Color Change */
 @keyframes rainbow-border-animation {
     0% { border-color: #ff0000; box-shadow: 0 0 10px rgba(255, 0, 0, 0.2); }
     20% { border-color: #ff8000; }
@@ -2725,33 +2455,30 @@ section {
     100% { border-color: #ff0000; box-shadow: 0 0 10px rgba(255, 0, 0, 0.2); }
 }
 
-/* 2. Guna pada kotak University Education */
+/* 2. Use on the University Education box */
 .university-card {
-    border: 4px solid #ff0000; /* Tebalkan sikit border supaya nampak warna */
+    border: 4px solid #ff0000; 
     border-radius: 15px;
     padding: 20px;
     background-color: #ffffff;
     transition: transform 0.3s ease;
-    /* Jalankan animasi secara berterusan (infinite) */
     animation: rainbow-border-animation 4s linear infinite;
 }
 
-/* Tambahan: Bila hover, dia berhenti berpusing warna atau membesar sikit */
 .university-card:hover {
     transform: scale(1.02);
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-/* --- ANIMASI ROLL-IN (SCROLL TRIGGERED) --- */
+/* --- ROLL-IN ANIMATION (SCROLL TRIGGERED) --- */
 
-/* State asal: Halimunan dan berada di luar skrin */
+/* Original state: Invisible and off-screen */
 .secondary-school-card {
     opacity: 0;
     transform: translateX(-200px) rotate(-120deg);
-    transition: all 0.1s; /* Standby untuk animasi */
+    transition: all 0.1s; 
 }
 
-/* Class ni akan ditambah oleh JavaScript bila user scroll sampai tempatnya */
 .reveal-roll-in {
     animation: roll-in-animation 1s ease-out forwards;
 }
@@ -2767,9 +2494,9 @@ section {
   }
 }
 
-/* --- ANIMASI SWING (BUAIAN) --- */
+/* --- SWING ANIMATION --- */
 
-/* 1. Definisi Gerakan Swing */
+/* 1. Definition of Swing Movement */
 @keyframes swing-animation {
   0% { transform: rotate(0deg); }
   20% { transform: rotate(15deg); }
@@ -2779,50 +2506,38 @@ section {
   100% { transform: rotate(0deg); }
 }
 
-/* 2. Class untuk tajuk */
+/* 2. Class for title */
 .family-welcome-swing {
-    display: inline-block; /* Wajib ada supaya boleh berpusing */
-    transform-origin: top center; /* Supaya dia berayun dari bahagian atas teks */
-    animation: swing-animation 2s ease-in-out infinite; /* 'infinite' supaya dia berayun terus-menerus */
+    display: inline-block; 
+    transform-origin: top center; 
+    animation: swing-animation 2s ease-in-out infinite; 
 }
 
-/* Optional: Kalau nak dia berayun bila letak cursor (hover) sahaja, 
-   padam 'infinite' kat atas dan guna kod bawah ni: */
-/* .family-welcome-swing:hover {
-    animation: swing-animation 1s ease-in-out both;
-} 
-*/
-
-/* --- ANIMASI TILT & LIFT --- */
+/* --- TILT & LIFT ANIMATION --- */
 
 .family-member-card {
-    /* Keadaan asal */
     transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.5s ease;
     cursor: pointer;
-    perspective: 1000px; /* Memberi kesan kedalaman 3D */
+    perspective: 1000px;
 }
 
 .family-member-card:hover {
-    /* 1. Lift: Bergerak ke atas (-15px) */
-    /* 2. Tilt: Senget sedikit (rotate) */
-    /* 3. Scale: Membesar sedikit (1.05) */
     transform: translateY(-15px) rotateX(5deg) rotateY(5deg) scale(1.05);
     
-    /* Menambah bayang supaya nampak lebih 'terangkat' */
     box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
 }
 
-/* Memastikan gambar dalam kad juga nampak kemas */
+/* Ensure that the pictures on the card also look neat */
 .family-member-card img {
     border-radius: 10px;
     transition: filter 0.3s ease;
 }
 
 .family-member-card:hover img {
-    filter: brightness(1.1); /* Gambar jadi terang sikit bila hover */
+    filter: brightness(1.1);
 }
 
-/* --- ANIMASI GLOW TEXT (BERCAHAYA) --- */
+/* --- GLOW TEXT ANIMATION (GLOWING) --- */
 
 @keyframes glow-animation {
   0% { 
@@ -2831,7 +2546,7 @@ section {
   }
   50% { 
     text-shadow: 0 0 10px #fff, 0 0 20px var(--color-secondary), 0 0 30px var(--color-secondary);
-    color: #444; /* Warna teks berubah sikit masa bercahaya */
+    color: #444; 
   }
   100% { 
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px var(--color-primary); 
@@ -2845,7 +2560,7 @@ section {
     display: inline-block;
 }
 
-/* Pastikan album-item kembali normal tanpa heartbeat */
+/* Make sure the album-items return to normal without a heartbeat */
 .album-item {
     transition: transform 0.3s ease;
     border-radius: 10px;
@@ -2853,10 +2568,10 @@ section {
 }
 
 .album-item:hover {
-    transform: scale(1.03); /* Sekadar membesar sikit bila hover */
+    transform: scale(1.03); 
 }
 
-/* --- ANIMASI TYPING (KESAN MESIN TAIP) --- */
+/* --- TYPING ANIMATION (TYPING MACHINE EFFECT) --- */
 
 .typing-container {
   display: inline-block;
@@ -2864,27 +2579,27 @@ section {
 
 .typing-effect {
   display: block;
-  overflow: hidden; /* Sembunyikan teks yang belum ditaip */
-  border-right: .15em solid var(--color-secondary); /* Garisan cursor */
-  white-space: nowrap; /* Teks kekal dalam satu baris */
+  overflow: hidden; 
+  border-right: .15em solid var(--color-secondary); 
+  white-space: nowrap; 
   margin: 0 auto; 
   letter-spacing: .05em;
-  width: 0; /* Bermula dengan kosong */
+  width: 0; 
 }
 
-/* Animasi untuk menaip */
+/* Animations for typing */
 @keyframes typing-animation {
   from { width: 0 }
   to { width: 100% }
 }
 
-/* Animasi untuk cursor berkelip */
+/* Animation for blinking cursor */
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: var(--color-secondary); }
 }
 
-/* Class ini akan ditambah guna JavaScript bila user skrol */
+/* This class will be added using JavaScript when the user scrolls. */
 .start-typing {
   animation: 
     typing-animation 3s steps(30, end) forwards,
@@ -2900,8 +2615,8 @@ section {
 .gradient-text {
   background: linear-gradient(90deg, #ff0000, #ff8000, #ffff00, #00ff00, #0000ff);
   background-size: 300%;
-  -webkit-background-clip: text; /* Wajib ada */
-  -webkit-text-fill-color: transparent; /* Wajib ada */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
   animation: gradient-shift 5s ease infinite;
 }
 
@@ -2929,4 +2644,5 @@ section {
 
 .focus-in {
   animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+
 }
