@@ -190,10 +190,6 @@
     </footer>
 
 <script>
-// ===================================
-// FUNGSI JAVASCRIPT
-// ===================================
-
 function updateTime() {
     const now = new Date();
     const formattedTime = now.toLocaleDateString('en-US', {
@@ -271,7 +267,6 @@ function handleEsc(e) {
     if (e.key === 'Escape') closeModal();
 }
 
-// --- JAVASCRIPT INTERSECTION OBSERVER UNTUK TYPING ---
 const typeObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -288,7 +283,6 @@ if (videoTitleContainer) {
     typeObserver.observe(videoTitleContainer);
 }
 
-// Jalankan fungsi awal
 updateTime();
 setInterval(updateTime, 1000);
 updateFooterDate();
@@ -296,4 +290,5 @@ updateFooterDate();
 </script>
 
 </body>
+
 </html>
