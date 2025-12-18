@@ -208,7 +208,6 @@
     </footer>
     
 <script>
-// UPDATE TIME DISPLAY
 function updateTime() {
     const now = new Date();
     const formattedTime = now.toLocaleDateString('en-US', { 
@@ -225,7 +224,6 @@ function updateTime() {
     if (timeDisplay) timeDisplay.innerHTML = formattedTime; 
 }
 
-// UPDATE FOOTER DATE
 function updateFooterDate() {
     const now = new Date();
     const updateDateElement = document.getElementById('update-date');
@@ -234,7 +232,6 @@ function updateFooterDate() {
     }
 }
 
-// SCROLL OBSERVER FOR SECONDARY SCHOOL ANIMATION
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -248,11 +245,11 @@ if (target) {
     observer.observe(target);
 }
 
-// RUN FUNCTIONS
 updateTime();
 setInterval(updateTime, 1000);
 updateFooterDate();
 </script>
 
 </body>
+
 </html>
